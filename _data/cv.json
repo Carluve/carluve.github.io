@@ -1,8 +1,8 @@
 {
   "basics": {
     "name": "Carlos Luengo Vera",
-    "email": "carlos.luengo@outlook.com",
-    "phone": "+34 627 445 234",
+    "email": "carluve@outlook.com",
+    "phone": "",
     "website": "",
     "summary": "Sr. Account Executive focused on AI and digital transformation. Experienced in EdTech, cloud, and public sector innovation.",
     "location": {
@@ -167,28 +167,32 @@
     }
   ],
   "references": [],
-  "publications": [
-    {
-      "name": "Evaluating Large Language Models on the Spanish Medical Intern Resident (MIR) Examination 2024/2025",
-      "publisher": "arXiv",
-      "releaseDate": "2024-04-01",
-      "website": "https://arxiv.org/abs/2503.00025",
-      "summary": "Comparative analysis of generative AI models in clinical reasoning and performance across the MIR 2024/2025 medical exams."
-    }
-    // {
-    //   "name": "Revisión bibliográfica de las herramientas de IA generativa aplicadas al aprendizaje de idiomas",
-    //   "publisher": "Revista de Innovación Educativa",
-    //   "releaseDate": "2024-01-15",
-    //   "website": "",
-    //   "summary": "A comprehensive review of generative AI tools used in language learning and their educational implications."
-    // },
-    // {
-    //   "name": "Human-AI Alignment in Education: Lessons from Public Sector Use Cases",
-    //   "publisher": "arXiv",
-    //   "releaseDate": "2024-03-01",
-    //   "website": "https://arxiv.org/abs/2503.00025",
-    //   "summary": "Explores alignment strategies for deploying AI responsibly in educational systems, grounded in real public sector applications."
-    // }
+
+"publications": [
+  {
+    "name": "Evaluating Large Language Models on the Spanish Medical Intern Resident (MIR) Examination 2024/2025",
+    "publisher": "arXiv",
+    "releaseDate": "2024-04-01",
+    "website": "https://arxiv.org/abs/2503.00025",
+    "summary": "Comparative analysis of generative AI models in clinical reasoning and performance across the MIR 2024/2025 medical exams."
+  }
+],
+"publications_hidden": [
+  {
+    "name": "Revisión bibliográfica de las herramientas de IA generativa aplicadas al aprendizaje de idiomas",
+    "publisher": "Revista de Innovación Educativa",
+    "releaseDate": "2024-01-15",
+    "website": "",
+    "summary": "A comprehensive review of generative AI tools used in language learning and their educational implications."
+  },
+  {
+    "name": "Human-AI Alignment in Education: Lessons from Public Sector Use Cases",
+    "publisher": "arXiv",
+    "releaseDate": "2024-03-01",
+    "website": "https://arxiv.org/abs/2503.00025",
+    "summary": "Explores alignment strategies for deploying AI responsibly in educational systems, grounded in real public sector applications."
+  }
+]
   ],
   "presentations": [
     {
