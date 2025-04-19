@@ -1,14 +1,23 @@
 ---
-title: "Paper Title Number 1"
+title: "Evaluating Large Language Models on the Spanish Medical Intern Resident (MIR) Examination 2024/2025"
 collection: publications
 category: manuscripts
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-bibtexurl: 'http://academicpages.github.io/files/bibtex1.bib'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+permalink: /publication/2024-04-01-evaluating-llms-mir
+excerpt: 'Comparative analysis of generative AI models in clinical reasoning and performance across the MIR 2024/2025 medical exams.'
+date: 2024-04-01
+venue: 'arXiv'
+slidesurl: ''
+paperurl: 'https://arxiv.org/abs/2503.00025'
+bibtexurl: ''
+citation: 'Carlos Luengo Vera et al. (2024). "Evaluating Large Language Models on the Spanish Medical Intern Resident (MIR) Examination 2024/2025." <i>arXiv</i>.'
 ---
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+
+This study provides a comparative evaluation of 22 large language models (LLMs) on the Spanish Medical Intern Resident (MIR) exams for 2024 and 2025. It assesses the ability of generative AI models to demonstrate clinical reasoning, interpret images, and apply epidemiological knowledge.
+
+Key findings include:
+- Fine-tuned models like Miri Pro outperform general-purpose LLMs in clinical tasks.
+- Multimodal models show superior performance on image-based questions.
+- General-purpose LLMs lag in Spain-specific public health scenarios.
+- Ethical reasoning remains a challenge for all AI systems evaluated.
+
+The study highlights the need for AI literacy in medical education, domain-specific fine-tuning, and responsible integration of AI into clinical assessment and decision-making.

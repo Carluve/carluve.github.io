@@ -22,10 +22,10 @@ repository               : "carluve/carluve.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "avatar-carlos.png"
   name             : "Carlos Luengo Vera"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "AI researcher focused on applying machine learning to solve real-world challenges in education, business, and public services."
   location         : "Spain"
   employer         : "Universidad de Alcalá"
   uri              : # URL
