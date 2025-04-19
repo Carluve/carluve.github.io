@@ -9,68 +9,147 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Economics and Artificial Intelligence, Universidad de Alcalá (2023–2027)
-* Master in Technology Project Management, Universidad de Alcalá (–2020)
-* Bachelor of Engineering in Computer and Information Sciences, Universidad de Alcalá (–2018)
+Updated April 2025.
 
-Work experience
-======
-* Sr. Account Executive for Education, Amazon Web Services (2022–Present)  
-  Led AI and EdTech innovation initiatives for major publishing clients and educational institutions.  
-  - Developed AI framework for 15 publishers, reducing costs by 65%.  
-  - Drove adoption of generative AI among enterprise clients.  
-  - Led Skills to Jobs Tech Alliance for national AI education enhancement.  
+Education 🎓
+=====
 
-* Sr. Partner Sales Manager, Lenovo (2022)  
-  Managed datacenter partner strategies; achieved 175% revenue growth in FY22.
+<!-- PhD -->
+<div style="display:flex;">
+  <div style="flex:0.5; padding-right:5%">
+    <img src="{{ site.url }}/images/resume/ualcala.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+  </div>
+  <div style="flex:4;">
+    <p style="margin:0px">
+      <b style="font-size: 130%;">Universidad de Alcalá</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">2023 – 2027</span>
+    </p>
+    Ph.D in Economics and Artificial Intelligence
+  </div>
+</div>
+<hr style="height:1em; margin:0em; visibility:hidden;" />
 
-* Sr. Manager – Global Innovation, Telefónica (2018–2022)  
-  Directed global digital innovation with a focus on AI, blockchain, and data monetization.  
-  - Launched AI pilots impacting 10% of the German market.  
-  - Pioneered data tokenization in Spain and Chile.
+<!-- Master -->
+<div style="display:flex;">
+  <div style="flex:0.5; padding-right:5%">
+    <img src="{{ site.url }}/images/resume/ualcala.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+  </div>
+  <div style="flex:4;">
+    <p style="margin:0px">
+      <b style="font-size: 130%;">Universidad de Alcalá</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">–2020</span>
+    </p>
+    Master in Technology Project Management
+  </div>
+</div>
+<hr style="height:1em; margin:0em; visibility:hidden;" />
 
-* Cloud Solution Sales Specialist, Insight (2015–2018)  
-  Delivered scalable cloud solutions for digital transformation initiatives.
+<!-- Bachelor -->
+<div style="display:flex;">
+  <div style="flex:0.5; padding-right:5%">
+    <img src="{{ site.url }}/images/resume/ualcala.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+  </div>
+  <div style="flex:4;">
+    <p style="margin:0px">
+      <b style="font-size: 130%;">Universidad de Alcalá</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">–2018</span>
+    </p>
+    Bachelor of Engineering in Computer and Information Sciences
+  </div>
+</div>
+<hr style="height:2em; margin:0em; visibility:hidden;" />
 
-* IT Pro – Evangelism Team, Microsoft (2010–2015)  
-  Led tech campaigns blending engineering with developer outreach.
+Work experience 💼
+=====
 
-Skills
-======
-* Artificial Intelligence
-* Cloud Computing (AWS, Azure)
-* Generative AI (OpenAI, Anthropic)
-* Data Strategy & Innovation
-* AI Ethics & Digital Transformation
-* EdTech and Public Sector Consulting
+<!-- AWS -->
+<div style="display:flex;">
+  <div style="flex:0.5; padding-right:5%">
+    <img src="{{ site.url }}/images/resume/aws.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+  </div>
+  <div style="flex:4;">
+    <p style="margin:0px">
+      <b style="font-size: 130%;">Amazon Web Services</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">2022 – Present</span>
+    </p>
+    Sr. Account Executive for Education  
+    <div style="color:#7a7a7a">
+      Led AI and EdTech innovation initiatives for publishing and educational institutions.
+    </div>
+  </div>
+</div>
+<hr style="height:1em; margin:0em; visibility:hidden;" />
 
-Languages
-======
-* Spanish – Native
-* English – Advanced
+<!-- Lenovo -->
+<div style="display:flex;">
+  <div style="flex:0.5; padding-right:5%">
+    <img src="{{ site.url }}/images/resume/lenovo.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+  </div>
+  <div style="flex:4;">
+    <p style="margin:0px">
+      <b style="font-size: 130%;">Lenovo</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">2022</span>
+    </p>
+    Sr. Partner Sales Manager  
+    <div style="color:#7a7a7a">
+      Managed datacenter partner strategies; achieved 175% revenue growth in FY22.
+    </div>
+  </div>
+</div>
+<hr style="height:1em; margin:0em; visibility:hidden;" />
 
-Publications
-======
-<ul>{% for post in site.publications reversed %}
-  {% include archive-single-cv.html %}
-{% endfor %}</ul>
+<!-- Telefónica -->
+<div style="display:flex;">
+  <div style="flex:0.5; padding-right:5%">
+    <img src="{{ site.url }}/images/resume/telefonica.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+  </div>
+  <div style="flex:4;">
+    <p style="margin:0px">
+      <b style="font-size: 130%;">Telefónica</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">2018 – 2022</span>
+    </p>
+    Sr. Manager – Global Innovation  
+    <div style="color:#7a7a7a">
+      Focused on AI, blockchain, and data monetization.
+    </div>
+  </div>
+</div>
+<hr style="height:1em; margin:0em; visibility:hidden;" />
 
-Talks
-======
-<ul>{% for post in site.talks reversed %}
-  {% include archive-single-talk-cv.html  %}
-{% endfor %}</ul>
+<!-- Insight -->
+<div style="display:flex;">
+  <div style="flex:0.5; padding-right:5%">
+    <img src="{{ site.url }}/images/resume/insight.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+  </div>
+  <div style="flex:4;">
+    <p style="margin:0px">
+      <b style="font-size: 130%;">Insight</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">2015 – 2018</span>
+    </p>
+    Cloud Solution Sales Specialist  
+    <div style="color:#7a7a7a">
+      Delivered cloud solutions for digital transformation.
+    </div>
+  </div>
+</div>
+<hr style="height:1em; margin:0em; visibility:hidden;" />
 
-Teaching
-======
-<ul>{% for post in site.teaching reversed %}
-  {% include archive-single-cv.html %}
-{% endfor %}</ul>
+<!-- Microsoft -->
+<div style="display:flex;">
+  <div style="flex:0.5; padding-right:5%">
+    <img src="{{ site.url }}/images/resume/microsoft.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+  </div>
+  <div style="flex:4;">
+    <p style="margin:0px">
+      <b style="font-size: 130%;">Microsoft</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">2010 – 2015</span>
+    </p>
+    IT Pro – Evangelism Team  
+    <div style="color:#7a7a7a">
+      Led developer outreach and tech campaigns.
+    </div>
+  </div>
+</div>
+<hr style="height:2em; margin:0em; visibility:hidden;" />
 
-Service and leadership
-======
-* Speaker at various international EdTech and AI conferences  
-* Mentor in AI & cloud careers for university programs  
-* Contributor to open policy discussions on generative AI
+<!-- You can replicate the same format for Skills, Languages, etc. or keep them in markdown as-is. -->
