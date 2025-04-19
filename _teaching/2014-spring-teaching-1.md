@@ -11,7 +11,13 @@ level: "100"
 technologies: ["PartyRock", "Amazon Bedrock"]
 ---
 
-Taller práctico de IA Generativa usando PartyRock.
+- **Fecha:** 25 de marzo de 2025  
+- **Evento:** AWS Generative AI Day - Workshop IA Generativa  
+- **Duración:** 2 horas  
+- **Ubicación:** Teatro Goya Multiespacio, Madrid  
+- **Nivel:** 100  
+- **Tecnologías:** PartyRock, Amazon Bedrock  
+- **Descripción:** Taller práctico de IA Generativa usando PartyRock
 
-![Generative AI Day - Foto 1](/images/teaching/202503_genaidaygoya.JPG)
+![Generative AI Day - Foto 1](/images/teaching/202503_genaidaygoya.JPG)  
 ![Generative AI Day - Foto 2](/images/teaching/202503_genaidayteatrogoya.PNG)

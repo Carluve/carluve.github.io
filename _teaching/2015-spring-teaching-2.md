@@ -11,7 +11,13 @@ level: "100"
 technologies: ["PartyRock", "Amazon Bedrock"]
 ---
 
-Sesión inspiradora de IA Generativa.
+- **Fecha:** 31 de marzo de 2025  
+- **Evento:** Digitalización e Inteligencia Artificial  
+- **Duración:** 1 hora  
+- **Ubicación:** Auditorio Municipal Pedro Almodóvar - Puertollano  
+- **Nivel:** 100  
+- **Tecnologías:** PartyRock, Amazon Bedrock  
+- **Descripción:** Sesión inspiradora de IA Generativa
 
-![Puertollano - Foto 1](/images/teaching/202503_puertollano.jpeg)
+![Puertollano - Foto 1](/images/teaching/202503_puertollano.jpeg)  
 ![Puertollano - Foto 2](/images/teaching/202503_puertollano2.JPG)
