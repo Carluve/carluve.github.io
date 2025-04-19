@@ -1,20 +1,17 @@
 ---
-title: "Teaching experience 2"
+title: "Digitalización e Inteligencia Artificial"
 collection: teaching
 type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
-venue: "University 1, Department"
-date: 2015-01-01
-location: "City, Country"
+permalink: /teaching/2025-spring-puertollano
+venue: "Auditorio Municipal Pedro Almodóvar - Puertollano"
+date: 2025-03-31
+location: "Puertollano, España"
+duration: "1 hora"
+level: "100"
+technologies: ["PartyRock", "Amazon Bedrock"]
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+Sesión inspiradora de IA Generativa.
 
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+![Puertollano - Foto 1](/images/teaching/202503_puertollano.jpeg)
+![Puertollano - Foto 2](/images/teaching/202503_puertollano2.JPG)

@@ -1,20 +1,17 @@
 ---
-title: "Teaching experience 1"
+title: "AWS Generative AI Day - Workshop IA Generativa"
 collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+type: "Workshop"
+permalink: /teaching/2025-spring-genai-day
+venue: "AWS"
+date: 2025-03-25
+location: "Teatro Goya Multiespacio, Madrid"
+duration: "2 horas"
+level: "100"
+technologies: ["PartyRock", "Amazon Bedrock"]
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+Taller práctico de IA Generativa usando PartyRock.
 
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+![Generative AI Day - Foto 1](/images/teaching/202503_genaidaygoya.JPG)
+![Generative AI Day - Foto 2](/images/teaching/202503_genaidayteatrogoya.PNG)
