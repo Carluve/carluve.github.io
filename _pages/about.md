@@ -14,7 +14,8 @@ I'm a PhD candidate and AI enthusiast with a passion for applying cutting-edge t
 Previously, I worked across tech giants and innovation teams (Telefónica, Lenovo, Microsoft), always keeping one eye on impact and the other on what's next.
 
 When I’m not coding, presenting, or reading obscure regulation docs, you’ll probably find me:
-🏃 running around Madrid,  
+
+🚴 biking through Madrid and beyond, always chasing new horizons,
 🌍 chasing new cities to explore, or  
 🎙️ sharing thoughts on AI, tech, and the future of learning.
 
