@@ -22,7 +22,6 @@ Work experience
   - Developed AI framework for 15 publishers, reducing costs by 65%.  
   - Drove adoption of generative AI among enterprise clients.  
   - Led Skills to Jobs Tech Alliance for national AI education enhancement.  
-  - Overachieved quotas: FY22 (110%), FY23 (111%), FY24 YTD (108%).
 
 * Sr. Partner Sales Manager, Lenovo (2022)  
   Managed datacenter partner strategies; achieved 175% revenue growth in FY22.
