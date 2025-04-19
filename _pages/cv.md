@@ -11,54 +11,67 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Economics and Artificial Intelligence, Universidad de Alcalá (2023–2027)
+* Master in Technology Project Management, Universidad de Alcalá (–2020)
+* Bachelor of Engineering in Computer and Information Sciences, Universidad de Alcalá (–2018)
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Sr. Account Executive for Education, Amazon Web Services (2022–Present)  
+  Led AI and EdTech innovation initiatives for major publishing clients and educational institutions.  
+  - Developed AI framework for 15 publishers, reducing costs by 65%.  
+  - Drove adoption of generative AI among enterprise clients.  
+  - Led Skills to Jobs Tech Alliance for national AI education enhancement.  
+  - Overachieved quotas: FY22 (110%), FY23 (111%), FY24 YTD (108%).
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Sr. Partner Sales Manager, Lenovo (2022)  
+  Managed datacenter partner strategies; achieved 175% revenue growth in FY22.
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+* Sr. Manager – Global Innovation, Telefónica (2018–2022)  
+  Directed global digital innovation with a focus on AI, blockchain, and data monetization.  
+  - Launched AI pilots impacting 10% of the German market.  
+  - Pioneered data tokenization in Spain and Chile.
+
+* Cloud Solution Sales Specialist, Insight (2015–2018)  
+  Delivered scalable cloud solutions for digital transformation initiatives.
+
+* IT Pro – Evangelism Team, Microsoft (2010–2015)  
+  Led tech campaigns blending engineering with developer outreach.
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Artificial Intelligence
+* Cloud Computing (AWS, Azure)
+* Generative AI (OpenAI, Anthropic)
+* Data Strategy & Innovation
+* AI Ethics & Digital Transformation
+* EdTech and Public Sector Consulting
+
+Languages
+======
+* Spanish – Native
+* English – Advanced
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+<ul>{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
+
 Talks
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
+<ul>{% for post in site.talks reversed %}
+  {% include archive-single-talk-cv.html  %}
+{% endfor %}</ul>
+
 Teaching
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+<ul>{% for post in site.teaching reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
+
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Speaker at various international EdTech and AI conferences  
+* Mentor in AI & cloud careers for university programs  
+* Contributor to open policy discussions on generative AI
