@@ -1,24 +1,26 @@
 ---
-title: "Workshop Imagine Day"
+title: "Make Your Wishes Come True – The Wave Show"
 collection: teaching
-type: "Workshop"
-permalink: /teaching/2025-spring-imagineday
-venue: "Amazon España"
-date: 2025-03-20
-location: "Madrid, España"
-duration: "2 horas"
+type: "Charla"
+permalink: /teaching/2025-spring-thewave
+venue: "The Wave Show"
+date: 2025-04-XX
+location: "https://waveshow.es/"
+duration: "1 hora"
 level: "100"
-technologies: ["PartyRock", "Amazon Bedrock"]
+technologies: ["Amazon PartyRock"]
 ---
 
-- **Fecha:** 20 de marzo de 2025  
-- **Evento:** Workshop Imagine Day  
-- **Duración:** 2 horas  
-- **Ubicación:** Oficina Amazon España, Madrid  
+- **Fecha:** abril de 2025  
+- **Evento:** Make Your Wishes Come True – The Wave Show  
+- **Duración:** 1 hora  
+- **Ubicación:** [The Wave Show](https://waveshow.es/)  
 - **Nivel:** 100  
-- **Tecnologías:** PartyRock, Amazon Bedrock  
-- **Descripción:** Taller de introducción a la Inteligencia Artificial Generativa donde los asistentes, en solo dos horas, pasaron de la idea al prototipo utilizando PartyRock. A través de casos prácticos para el Tercer Sector, se exploraron asistentes inteligentes como traductores culturales, bots de onboarding y simuladores de entrevistas. El enfoque fue totalmente accesible, sin requerimientos técnicos, demostrando el potencial de estas herramientas para ONGs y asociaciones.
+- **Tecnologías:** Amazon PartyRock  
+- **Descripción:** En esta charla inspiradora, exploramos cómo la Inteligencia Artificial Generativa (GenAI) puede convertir ideas en realidad a través de aplicaciones innovadoras. A través de un dinámico storytelling, compartimos ejemplos prácticos y demostraciones en vivo utilizando Amazon PartyRock, una plataforma que permite crear aplicaciones de IA de forma sencilla y accesible.
 
-![Imagine Day - Foto](/images/teaching/202504_imaginenpo.jpg)
+Descubrimos cómo la GenAI está transformando la creatividad, la productividad y la innovación en múltiples ámbitos, desde la generación de contenido hasta la automatización de tareas. Si alguna vez has imaginado una herramienta que haga tu vida más fácil o más divertida, esta sesión muestra cómo puedes convertir ese deseo en una realidad con la ayuda de la inteligencia artificial.
 
-[Ver presentación del taller (PDF)](/files/NPO_PartyRock_Workshop.pdf)
+¡Una experiencia para inspirarse, aprender y dar los primeros pasos en la creación de tu propia app de GenAI!
+
+![The Wave Show - Foto](/images/teaching/202503_thewave.JPG)
