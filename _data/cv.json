@@ -1,16 +1,16 @@
 {
   "basics": {
-    "name": "Carlos Luengo Vera",
-    "email": "carluve@outlook.com",
+    "name": "Your Sidebar Name",
+    "email": "none@example.org",
     "phone": "",
-    "website": "",
-    "summary": "Sr. Account Executive focused on AI and digital transformation. Experienced in EdTech, cloud, and public sector innovation.",
+    "website": "https://academicpages.github.io",
+    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
     "location": {
       "address": "",
-      "postalCode": "28034",
-      "city": "Madrid",
-      "countryCode": "ES",
-      "region": "Madrid"
+      "postalCode": "",
+      "city": "Earth",
+      "countryCode": "US",
+      "region": ""
     },
     "profiles": [
       {
@@ -25,156 +25,73 @@
       },
       {
         "network": "GitHub",
-        "username": "carluve",
-        "url": "https://github.com/carluve"
-      },
-      {
-        "network": "LinkedIn",
-        "username": "carlosluengovera",
-        "url": "https://www.linkedin.com/in/carlosluengovera/"
+        "username": "academicpages",
+        "url": "https://github.com/academicpages"
       }
     ]
   },
-  "work": [
-    {
-      "company": "Amazon Web Services",
-      "position": "Sr Account Executive for Education",
-      "startDate": "2022-08",
-      "endDate": "",
-      "location": "Madrid, Spain & São Paulo, Brazil",
-      "summary": "Led AI and EdTech innovation initiatives for major publishing clients and educational institutions.",
-      "highlights": [
-        "Developed AI framework for 15 publishers, reducing costs by 65%.",
-        "Drove AI Generative adoption among enterprise clients.",
-        "Led Skills to Jobs Tech Alliance to enhance national AI education."
-      ]
-    },
-    {
-      "company": "Lenovo",
-      "position": "Sr Partner Sales Manager",
-      "startDate": "2022-01",
-      "endDate": "2022-08",
-      "location": "Madrid, Spain",
-      "summary": "Managed datacenter partner strategies to boost sales performance.",
-      "highlights": []
-    },
-    {
-      "company": "Telefónica",
-      "position": "Sr Manager – Global Innovation",
-      "startDate": "2018-08",
-      "endDate": "2022-01",
-      "location": "Madrid, Spain",
-      "summary": "Directed global digital innovation programs focused on AI, blockchain, and data monetization.",
-      "highlights": [
-        "Implemented AI and blockchain solutions for 20+ clients.",
-        "Pioneered data tokenization and monetization in Spain and Chile.",
-        "Led strategic partnerships and innovation culture."
-      ]
-    },
-    {
-      "company": "Insight",
-      "position": "Cloud Solution Sales Specialist",
-      "startDate": "2015-05",
-      "endDate": "2018-08",
-      "location": "Madrid, Spain",
-      "summary": "Delivered scalable cloud solutions and guided clients in digital transformation.",
-      "highlights": [
-        "Improved operational efficiency through tailored cloud architectures."
-      ]
-    },
-    {
-      "company": "Microsoft",
-      "position": "IT Pro – Evangelism Team",
-      "startDate": "2010-09",
-      "endDate": "2015-05",
-      "location": "Madrid, Spain",
-      "summary": "Blended technical expertise with marketing to run high-impact IT campaigns.",
-      "highlights": [
-        "Created user-centric technology strategies for broad adoption."
-      ]
-    }
-  ],
+  "work": [],
   "education": [
     {
-      "institution": "Universidad de Alcalá",
-      "area": "PhD in Economics and Artificial Intelligence",
-      "studyType": "",
-      "startDate": "2023",
-      "endDate": "2027",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "Universidad de Alcalá",
-      "area": "Master in Technology Project Management",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2020",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "Universidad de Alcalá",
-      "area": "Bachelor of Engineering in Computer and Information Sciences",
+      "institution": "GitHub University",
+      "area": "Ph.D in Version Control Theory",
       "studyType": "",
       "startDate": "",
       "endDate": "2018",
       "gpa": null,
       "courses": []
+    },
+    {
+      "institution": "GitHub University",
+      "area": "M.S. in Jekyll",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "2014",
+      "gpa": null,
+      "courses": []
+    },
+    {
+      "institution": "GitHub University",
+      "area": "B.S. in GitHub",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "2012",
+      "gpa": null,
+      "courses": []
     }
   ],
-  "skills": [
-    {
-      "name": "Technical",
-      "keywords": ["Artificial Intelligence", "Cloud Computing (AWS, Azure)", "Generative AI", "OpenAI", "Anthropic", "M365", "Apple Ecosystem"]
-    },
-    {
-      "name": "Data & Innovation",
-      "keywords": ["Data Strategy", "Blockchain", "AI Ethics", "Digital Transformation", "EdTech"]
-    }
-  ],
-  "languages": [
-    {
-      "language": "Spanish",
-      "fluency": "Native"
-    },
-    {
-      "language": "English",
-      "fluency": "Advanced"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Technology"
-    },
-    {
-      "name": "Education"
-    },
-    {
-      "name": "Research"
-    },
-    {
-      "name": "Economics"
-    },
-    {
-      "name": "STEAM"
-    },
-    {
-      "name": "Telecommunications"
-    },
-    {
-      "name": "Management"
-    }
-  ],
+  "skills": [],
+  "languages": [],
+  "interests": [],
   "references": [],
-
   "publications": [
     {
-      "name": "Evaluating Large Language Models on the Spanish Medical Intern Resident (MIR) Examination 2024/2025",
-      "publisher": "arXiv",
-      "releaseDate": "2024-04-01",
-      "website": "https://arxiv.org/abs/2503.00025",
-      "summary": "Comparative analysis of generative AI models in clinical reasoning and performance across the MIR 2024/2025 medical exams."
+      "name": "Paper Title Number 1",
+      "publisher": "Journal 1",
+      "releaseDate": "2009-10-01",
+      "website": "http://academicpages.github.io/files/paper1.pdf",
+      "summary": "This paper is about the number 1. The number 2 is left for future work."
+    },
+    {
+      "name": "Paper Title Number 2",
+      "publisher": "Journal 1",
+      "releaseDate": "2010-10-01",
+      "website": "http://academicpages.github.io/files/paper2.pdf",
+      "summary": "This paper is about the number 2. The number 3 is left for future work."
+    },
+    {
+      "name": "Paper Title Number 3",
+      "publisher": "Journal 1",
+      "releaseDate": "2015-10-01",
+      "website": "http://academicpages.github.io/files/paper3.pdf",
+      "summary": "This paper is about the number 3. The number 4 is left for future work."
+    },
+    {
+      "name": "Paper Title Number 4",
+      "publisher": "GitHub Journal of Bugs",
+      "releaseDate": "2024-02-17",
+      "website": "http://academicpages.github.io/files/paper3.pdf",
+      "summary": "This paper is about fixing template issue #693."
     }
   ],
   "presentations": [
