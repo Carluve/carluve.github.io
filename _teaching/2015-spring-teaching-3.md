@@ -11,14 +11,14 @@ level: "100"
 technologies: ["PartyRock", "Amazon Bedrock"]
 ---
 
-- **Fecha:** 11 de abril de 2025  
-- **Evento:** Workshop Imagine Day  
-- **Duración:** 2 horas  
-- **Ubicación:** Oficina Amazon España, Madrid  
-- **Nivel:** 100  
-- **Tecnologías:** PartyRock, Amazon Bedrock  
-- **Descripción:** Taller de introducción a la Inteligencia Artificial Generativa donde los asistentes, en solo dos horas, pasaron de la idea al prototipo utilizando PartyRock. A través de casos prácticos para el Tercer Sector, se exploraron asistentes inteligentes como traductores culturales, bots de onboarding y simuladores de entrevistas. El enfoque fue totalmente accesible, sin requerimientos técnicos, demostrando el potencial de estas herramientas para ONGs y asociaciones.
+- **Date:** April 11, 2025  
+- **Event:** Workshop Imagine Day  
+- **Duration:** 2 hours  
+- **Location:** Amazon Spain Office, Madrid  
+- **Level:** 100  
+- **Technologies:** PartyRock, Amazon Bedrock  
+- **Description:** Introductory workshop on Generative AI where participants went from idea to prototype in just two hours using PartyRock. Through practical use cases for the nonprofit sector, attendees explored intelligent assistants such as cultural translators, onboarding bots, and interview simulators. The workshop was fully accessible and required no technical background, showcasing the potential of these tools for NGOs and associations.
 
-![Imagine Day - Foto](/images/teaching/202504_imaginenpo.jpg)
+![Imagine Day - Photo](/images/teaching/202504_imaginenpo.jpg)
 
-[Ver presentación del taller (PDF)](/files/NPO_PartyRock_Workshop.pdf)
+[View workshop presentation (PDF)](/files/NPO_PartyRock_Workshop.pdf)

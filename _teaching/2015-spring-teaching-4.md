@@ -11,16 +11,16 @@ level: "100"
 technologies: ["Amazon PartyRock"]
 ---
 
-- **Fecha:** 20 de Marzo de 2025 
-- **Evento:** Make Your Wishes Come True – The Wave Show  
-- **Duración:** 1 hora  
-- **Ubicación:** [The Wave Show](https://waveshow.es/)  
-- **Nivel:** 100  
-- **Tecnologías:** Amazon PartyRock  
-- **Descripción:** En esta charla inspiradora, exploramos cómo la Inteligencia Artificial Generativa (GenAI) puede convertir ideas en realidad a través de aplicaciones innovadoras. A través de un dinámico storytelling, compartimos ejemplos prácticos y demostraciones en vivo utilizando Amazon PartyRock, una plataforma que permite crear aplicaciones de IA de forma sencilla y accesible.
+- **Date:** March 20, 2025  
+- **Event:** Make Your Wishes Come True – The Wave Show  
+- **Duration:** 1 hour  
+- **Location:** [The Wave Show](https://waveshow.es/)  
+- **Level:** 100  
+- **Technologies:** Amazon PartyRock  
+- **Description:** In this inspiring talk, we explored how Generative Artificial Intelligence (GenAI) can turn ideas into reality through innovative applications. Using engaging storytelling, we shared practical examples and live demos with Amazon PartyRock, a platform that enables anyone to create AI applications easily and accessibly.
 
-Descubrimos cómo la GenAI está transformando la creatividad, la productividad y la innovación en múltiples ámbitos, desde la generación de contenido hasta la automatización de tareas. Si alguna vez has imaginado una herramienta que haga tu vida más fácil o más divertida, esta sesión muestra cómo puedes convertir ese deseo en una realidad con la ayuda de la inteligencia artificial.
+We discovered how GenAI is transforming creativity, productivity, and innovation across various domains, from content generation to task automation. If you’ve ever imagined a tool to make your life easier or more fun, this session showed how you can turn that wish into reality with the help of AI.
 
-¡Una experiencia para inspirarse, aprender y dar los primeros pasos en la creación de tu propia app de GenAI!
+An experience to get inspired, learn, and take your first steps in building your own GenAI app!
 
-![The Wave Show - Foto](/images/teaching/202503_thewave.JPG)
+![The Wave Show - Photo](/images/teaching/202503_thewave.JPG)

@@ -2,9 +2,9 @@
 title: "Impact of Generative AI on Workplace Productivity and Employee Well-being"
 collection: publications
 category: manuscripts
-permalink: /publication/2024-04-01-impact-generative-ai-wellbeing
+permalink: /publication/2024-11-21-impact-generative-ai-wellbeing
 excerpt: 'Study exploring how generative AI adoption affects workplace happiness, productivity, and the strategic implications for organizations.'
-date: 2024-04-01
+date: 2024-11-21
 venue: 'Universidad de Alcalá'
 slidesurl: ''
 paperurl: ''
