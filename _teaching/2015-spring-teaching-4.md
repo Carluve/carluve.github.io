@@ -4,14 +4,14 @@ collection: teaching
 type: "Charla"
 permalink: /teaching/2025-spring-thewave
 venue: "The Wave Show"
-date: 2025-04-XX
+date: 2025-03-20
 location: "https://waveshow.es/"
 duration: "1 hora"
 level: "100"
 technologies: ["Amazon PartyRock"]
 ---
 
-- **Fecha:** abril de 2025  
+- **Fecha:** 20 de Marzo de 2025 
 - **Evento:** Make Your Wishes Come True – The Wave Show  
 - **Duración:** 1 hora  
 - **Ubicación:** [The Wave Show](https://waveshow.es/)  
