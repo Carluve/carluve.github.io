@@ -15,8 +15,6 @@ Previously, I worked across tech giants and innovation teams (Telefónica, Lenov
 
 When I’m not coding, presenting, or reading obscure regulation docs, you’ll probably find me:
 
-🚴 biking through Madrid and beyond, always chasing new horizons,
-🌍 chasing new cities to explore, or  
-🎙️ sharing thoughts on AI, tech, and the future of learning.
+🚴 biking through Madrid and beyond, always chasing new horizons, 🌍 chasing new cities to explore, or 🎙️ sharing thoughts on AI, tech, and the future of learning.
 
 This site is my digital notebook — ideas, projects, papers, and a bit of chaos. Welcome!
