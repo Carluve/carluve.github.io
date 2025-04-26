@@ -1,3 +1,5 @@
+> Adapted from the Academic Pages project for personal use and deployed via GitHub Pages.
+
 # Academic Pages
 **Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
 
