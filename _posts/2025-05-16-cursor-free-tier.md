@@ -26,7 +26,7 @@ The free tier is a great way to try out Cursor's capabilities. For students, hob
 #### More Information
 You can learn more or sign up for the free tier at [Cursor's official website](https://www.cursor.so/).
 
-![Screenshot: Cursor Free Tier Experience](/images/cursor-free-tier-screenshot.png)
+![Screenshot: Cursor Free Tier Experience](/images/post/2025/2025_05_15_cursor.png)
 
 #### Student Offer: One Year of Cursor Pro Free
 If you are a verified university student, you can get **one year of Cursor Pro for free**. Just register and verify your student status using your university email. This unlocks all Pro features, including 500 fast premium requests per month and unlimited slow premium requests, for a full year.
