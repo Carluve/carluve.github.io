@@ -305,6 +305,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+  - jekyll-seo-tag
 
 # Mimic GitHub Pages with --safe
 whitelist:
@@ -351,3 +352,23 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# SEO and site metadata
+seo:
+  title: "Carlos Luengo (carluve@)"
+  description: "PhD Candidate, AI researcher, and technology consultant. Blog about AI, productivity, and real-world use cases."
+  url: "https://carluve.github.io"
+  twitter:
+    username: "carluve"
+  github:
+    username: "carluve"
+  linkedin:
+    username: "carlosluengo"
+  author: "Carlos Luengo Vera"
+  email: "carluve@outlook.com"
+  image: "/images/avatar-carlos.png"
+
+# Robots.txt (allow all)
+robots:
+  - user-agent: "*"
+    allow: "/"
