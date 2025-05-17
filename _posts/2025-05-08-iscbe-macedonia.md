@@ -3,6 +3,12 @@ title: "Participation at the 8th ISCBE Macedonia: Optimizing AI in Medical Educa
 date: 2025-05-08
 categories: [conference, AI, education]
 image: /files/31 Certificates Carlos Luengo Vera (8th ISCBE) (1).pdf
+permalink: /posts/2025/05/iscbe-macedonia/
+tags:
+  - Conference
+  - AI
+  - Medical Education
+  - Large Language Models
 ---
 
 On May 8, 2025, I had the honor of participating in the **8th International Scientific Conference on Business and Economics (ISCBE)**, held in Macedonia. The conference brought together experts and researchers from around the world to discuss the latest advances in information systems, data science, and artificial intelligence.

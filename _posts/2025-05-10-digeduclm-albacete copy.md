@@ -3,6 +3,12 @@ title: "Participation at DigEduCLM 2025: Congreso de Digitalización Educativa d
 date: 2025-05-10
 categories: [conference, digitalization, education]
 image: /images/digeduclm2025.jpg
+permalink: /posts/2025/05/digeduclm-albacete/
+tags:
+  - Conference
+  - Digital Education
+  - Spain
+  - EdTech
 ---
 
 On May 10, 2025, I had the pleasure of participating in the **Congreso de Digitalización Educativa de Castilla-La Mancha (DigEduCLM)**, held at the Campus de Albacete, UCLM. This event brought together educators, technologists, and innovators to explore the latest trends and best practices in educational digitalization.

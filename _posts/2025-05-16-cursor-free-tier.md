@@ -3,6 +3,13 @@ title: "Exploring the Free Tier of Cursor: AI-Powered Coding for Everyone"
 date: 2025-05-16
 categories: [tools, AI, coding]
 image: /images/cursor-logo.png
+permalink: /posts/2025/05/cursor-free-tier/
+tags:
+  - Cursor
+  - AI Tools
+  - Coding
+  - Productivity
+  - Free Tier
 ---
 
 Recently, I explored the **free tier of Cursor**, an AI-powered code editor designed to boost productivity and streamline software development. Cursor offers a modern, VSCode-based experience with integrated AI features for code completion, refactoring, and documentation.
