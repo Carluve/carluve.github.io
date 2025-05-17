@@ -12,6 +12,8 @@ tags:
 image: /images/post/2025/202505_deepresearch.png
 ---
 
+Deep research is more than just skimming search results—it's a disciplined, multi-stage approach to finding, evaluating, and synthesising information. In an era where AI generates vast amounts of content and misinformation is rife, mastering deep research is essential for anyone who wants to make well-informed decisions, uncover real insights, and maintain intellectual integrity. This guide shows you how to use ChatGPT and OpenAI tools to bring depth and rigour to your research process.
+
 > *Bringing rigour and depth to your information-gathering workflow with OpenAI tools.*
 
 ---
@@ -22,7 +24,7 @@ image: /images/post/2025/202505_deepresearch.png
 
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
-- [What Do We Mean by “Deep Research”?](#what-do-we-mean-by-deep-research)
+- [What Do We Mean by "Deep Research"?](#what-do-we-mean-by-deep-research)
 - [Why Deep Research Matters in the Age of AI](#why-deep-research-matters-in-the-age-of-ai)
 - [Core Concepts](#core-concepts)
   - [1. Problem Definition](#1-problem-definition)
@@ -43,7 +45,7 @@ image: /images/post/2025/202505_deepresearch.png
 
 ---
 
-## What Do We Mean by “Deep Research”?
+## What Do We Mean by "Deep Research"?
 Deep research goes beyond a quick skim of search-engine snippets. It is a **structured, multi-stage process** designed to:
 
 - formulate precise research questions,
