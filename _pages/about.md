@@ -7,6 +7,8 @@ redirect_from:
   - /about.html
 ---
 
+AI researcher focused on applying Generative AI to solve real-world challenges in education, business, and public services.
+
 Hi there! 👋
 
 I'm a PhD candidate and AI enthusiast with a passion for applying cutting-edge technology to real-world challenges—especially in education and the public sector. By day, I help governments and institutions innovate with AI and cloud at Amazon Web Services. By night, I explore the messy, fascinating world of generative models, digital policy, and sometimes... memes.
