@@ -62,6 +62,25 @@ Education 🎓
 Work experience 💼
 =====
 
+<!-- Universidad de Alcala -->
+<div style="display:flex;">
+  <div style="flex:0.5; padding-right:5%">
+    <img src="{{ site.url }}/images/resume/ualcala.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+  </div>
+  <div style="flex:4;">
+    <p style="margin:0px">
+      <b style="font-size: 130%;">Universidad de Alcalá</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">2023 – Present</span>
+    </p>
+    Lecturer – AI & Business Strategy  
+    <div style="color:#7a7a7a">
+      Teaching activities in the Department of Economics and Business Administration.
+    </div>
+  </div>
+</div>
+<hr style="height:1em; margin:0em; visibility:hidden;" />
+
+
 <!-- AWS -->
 <div style="display:flex;">
   <div style="flex:0.5; padding-right:5%">
@@ -72,7 +91,7 @@ Work experience 💼
       <b style="font-size: 130%;">Amazon Web Services</b>
       <span style="float:right; font-size:80%; color:#7a7a7a;">2022 – Present</span>
     </p>
-    Sr. Account Executive for Education  
+    Sr Account Executive – Generative AI  
     <div style="color:#7a7a7a">
       Led AI and EdTech innovation initiatives for publishing and educational institutions.
     </div>
@@ -90,7 +109,7 @@ Work experience 💼
       <b style="font-size: 130%;">Lenovo</b>
       <span style="float:right; font-size:80%; color:#7a7a7a;">2022</span>
     </p>
-    Sr. Partner Sales Manager  
+    Sr Channel & Datacenter Solutions Manager  
     <div style="color:#7a7a7a">
       Managed datacenter partner strategies; achieved 175% revenue growth in FY22.
     </div>
@@ -108,7 +127,7 @@ Work experience 💼
       <b style="font-size: 130%;">Telefónica</b>
       <span style="float:right; font-size:80%; color:#7a7a7a;">2018 – 2022</span>
     </p>
-    Sr. Manager – Global Innovation  
+    Global Innovation & AI Strategy Manager  
     <div style="color:#7a7a7a">
       Focused on AI, blockchain, and data monetization.
     </div>
@@ -126,7 +145,7 @@ Work experience 💼
       <b style="font-size: 130%;">Insight</b>
       <span style="float:right; font-size:80%; color:#7a7a7a;">2015 – 2018</span>
     </p>
-    Cloud Solution Sales Specialist  
+    Cloud Solutions Architect & Sales Specialist  
     <div style="color:#7a7a7a">
       Delivered cloud solutions for digital transformation.
     </div>
@@ -144,7 +163,7 @@ Work experience 💼
       <b style="font-size: 130%;">Microsoft</b>
       <span style="float:right; font-size:80%; color:#7a7a7a;">2010 – 2015</span>
     </p>
-    IT Pro – Evangelism Team  
+    Technical Evangelism & Ecosystem Manager  
     <div style="color:#7a7a7a">
       Led developer outreach and tech campaigns.
     </div>
