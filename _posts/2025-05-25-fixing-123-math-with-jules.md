@@ -1,11 +1,16 @@
 ---
 title: "Fixing 1-2-3 Math with Jules: How Google’s AI Coding Agent Revived My Broken App"
 date: 2025-05-25
+categories: [AI, development, Google, JavaScript]
+permalink: /posts/2025/05/fixing-123-math-jules-google-ai/
+tags:
+  - Jules
+  - Google
+  - AI Coding
+  - JavaScript
+  - Debugging
+image: /images/post/2025/202505_01jules.png
 ---
-
-# Fixing 1-2-3 Math with Jules: How Google’s AI Coding Agent Revived My Broken App
-
-## 📝 Summary
 
 In this post, I share how I used [Jules](https://jules.google), Google’s asynchronous coding assistant, to fix a broken educational game project I had abandoned. The app, [1-2-3 Math](https://www.carlosluengo.com/portfolio/2025-05-123math/), had various issues—broken buttons, language-switching bugs, and general logic problems. I decided to test Jules as a dev assistant and was positively surprised.
 
