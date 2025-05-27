@@ -47,31 +47,31 @@ Here’s the flow I tested:
 I created a new issue on GitHub with the title "Security test" and the description:
 > “Please check all errors in the code. This product is for kids.”
 
-#### 📸 Screenshot Placeholder
+#### 📸 GitHub issue being created and assigned to Amazon Q
 ![GitHub issue being created and assigned to Amazon Q](/images/post/2025/202505_01amazonq.png)
 
 ### Step 2: Assign the Issue to Amazon Q
 With one click on the "Assign to Amazon Q" button, the task is queued for processing. Q instantly comments to say it's working on generating the code.
 
-#### 📸 Screenshot Placeholder
+#### 📸 Q Developer's first response in the issue
 ![Q Developer's first response in the issue](/images/post/2025/202505_02amazonq.png)
 
 ### Step 3: Code Review Automation
 Once a pull request is created, Q automatically runs a code review. It flags risky code patterns (like undefined access in JS), suggests improvements, and adds severity tags.
 
-#### 📸 Screenshot Placeholder
+#### 📸 Inline review with warning, severity level, and description
 ![Inline review with warning, severity level, and description](/images/post/2025/202505_03amazonq.png)
 
 ### Step 4: Fix Suggestions & Pull Request Creation
 After the review, Q posts final comments and creates a PR with structured commits. You can review, merge or request improvements as usual.
 
-#### 📸 Screenshot Placeholder
+#### 📸 Summary of the pull request and deployment success
 ![Summary of the pull request and deployment success](/images/post/2025/202505_04amazonq.png)
 
 ### Bonus: JSON Error Handling Fix
 I tested how Q handles specific bugs. I logged a known issue in JSON parsing. Q created a custom utility for structured logging (`logJsonError`), documented its reasoning, and opened the PR.
 
-#### 📸 Screenshot Placeholder
+#### 📸 Full context of the JSON fix pull request
 ![Full context of the JSON fix pull request](/images/post/2025/202505_05amazonq.png)
 
 ---
