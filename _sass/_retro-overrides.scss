@@ -5,10 +5,10 @@
 /* Custom animations for interactive elements */
 @keyframes retroPulse {
   0%, 100% { 
-    box-shadow: 0 0 5px var(--neon-cyan);
+    box-shadow: 0 0 5px var(--neon-blue);
   }
   50% { 
-    box-shadow: 0 0 20px var(--neon-cyan), 0 0 30px var(--neon-cyan);
+    box-shadow: 0 0 20px var(--neon-blue), 0 0 30px var(--neon-blue);
   }
 }
 
@@ -29,11 +29,11 @@
     right: 0;
     height: 2px;
     background: linear-gradient(90deg, 
-      var(--neon-pink) 0%, 
+      var(--neon-blue) 0%, 
       var(--neon-cyan) 25%, 
-      var(--neon-lime) 50%, 
+      var(--neon-indigo) 50%, 
       var(--neon-cyan) 75%, 
-      var(--neon-pink) 100%);
+      var(--neon-blue) 100%);
     animation: retroPulse 3s infinite;
   }
 }
@@ -50,7 +50,7 @@
     letter-spacing: 0.05em;
     
     &:hover {
-      box-shadow: 0 0 15px var(--neon-purple);
+      box-shadow: 0 0 15px var(--neon-blue);
       transform: scale(1.05);
     }
   }
@@ -117,8 +117,8 @@ input, textarea, select {
   transition: all 0.3s ease;
   
   &:focus {
-    border-color: var(--neon-pink) !important;
-    box-shadow: 0 0 15px rgba(236, 72, 153, 0.3);
+    border-color: var(--neon-blue) !important;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
     outline: none;
   }
 }

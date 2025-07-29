@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     top: ${point.y}px;
                     width: ${8 - index}px;
                     height: ${8 - index}px;
-                    background: radial-gradient(circle, #22D3EE, transparent);
+                    background: radial-gradient(circle, #3B82F6, transparent);
                     border-radius: 50%;
                     pointer-events: none;
                     z-index: 9999;
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     const cursor = document.createElement('span');
                     cursor.textContent = '_';
                     cursor.style.animation = 'blink 1s infinite';
-                    cursor.style.color = '#F472B6';
+                    cursor.style.color = '#3B82F6';
                     title.appendChild(cursor);
                 }
             }, 150);
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 progress.style.cssText = `
                     height: 100%;
                     width: 0%;
-                    background: linear-gradient(90deg, #22D3EE, #F472B6);
+                    background: linear-gradient(90deg, #22D3EE, #3B82F6);
                     animation: retroLoad 2s ease-in-out infinite;
                 `;
                 
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             
-            ctx.fillStyle = '#22D3EE';
+            ctx.fillStyle = '#3B82F6';
             ctx.font = fontSize + 'px monospace';
             
             for (let i = 0; i < drops.length; i++) {
