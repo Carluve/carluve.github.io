@@ -3,41 +3,50 @@
    ========================================================================== */
 
 /* Import Google Fonts for 90s aesthetic */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&family=Press+Start+2P&display=swap");
 
 /* ==========================================================================
    90s COLOR PALETTE
    ========================================================================== */
 
 :root {
-  /* Primary 90s colors */
-  --retro-purple: #6B46C1;
-  --retro-pink: #EC4899;
-  --retro-cyan: #06B6D4;
-  --retro-lime: #84CC16;
-  --retro-orange: #F97316;
+  /* Primary 90s colors - more standard blues */
+  --retro-purple: #6b46c1;
+  --retro-blue: #1e3a8a;        /* Dark navy blue instead of pink */
+  --retro-cyan: #06b6d4;
+  --retro-orange: #f97316;
+  --retro-indigo: #4338ca;      /* Deep indigo */
   
   /* Neon variants */
-  --neon-purple: #A855F7;
-  --neon-pink: #F472B6;
-  --neon-cyan: #22D3EE;
-  --neon-lime: #A3E635;
+  --neon-purple: #a855f7;
+  --neon-blue: #3b82f6;         /* Bright blue instead of pink */
+  --neon-cyan: #22d3ee;
+  --neon-indigo: #6366f1;
   
   /* Dark variants */
-  --dark-purple: #4C1D95;
-  --dark-pink: #BE185D;
-  --dark-cyan: #0E7490;
+  --dark-purple: #4c1d95;
+  --dark-blue: #1e40af;
+  --dark-cyan: #0e7490;
   
-  /* Background gradients */
-  --bg-gradient-1: linear-gradient(135deg, var(--retro-purple), var(--retro-pink));
-  --bg-gradient-2: linear-gradient(45deg, var(--retro-cyan), var(--retro-lime));
-  --bg-gradient-3: linear-gradient(90deg, var(--retro-pink), var(--retro-orange));
+  /* Background gradients - using blues instead of pink/green */
+  --bg-gradient-1: linear-gradient(135deg, var(--retro-purple), var(--retro-blue));
+  --bg-gradient-2: linear-gradient(45deg, var(--retro-cyan), var(--retro-indigo));
+  --bg-gradient-3: linear-gradient(90deg, var(--retro-blue), var(--retro-orange));
   
-  /* Text colors */
-  --text-primary: #1F2937;
-  --text-secondary: #6B7280;
+  /* Text colors - adaptive to theme */
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
   --text-accent: var(--retro-purple);
   --text-neon: var(--neon-cyan);
+}
+
+/* Dark mode compatibility */
+[data-theme="dark"] {
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --bg-gradient-1: linear-gradient(135deg, #7c3aed, #2563eb);
+  --bg-gradient-2: linear-gradient(45deg, #0891b2, #4f46e5);
+  --bg-gradient-3: linear-gradient(90deg, #2563eb, #ea580c);
 }
 
 /* ==========================================================================
@@ -45,25 +54,28 @@
    ========================================================================== */
 
 /* Main heading font - futuristic */
-$header-font-family: 'Orbitron', 'Helvetica Neue', Arial, sans-serif;
+$header-font-family: "Orbitron", "Helvetica Neue", Arial, sans-serif;
 
 /* Body font - retro monospace feel */
-$global-font-family: 'Space Mono', Monaco, Consolas, monospace;
+$global-font-family: "Space Mono", Monaco, Consolas, monospace;
 
 /* Special accent font for titles */
-$accent-font-family: 'Press Start 2P', monospace;
+$accent-font-family: "Press Start 2P", monospace;
 
 /* Override theme typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $header-font-family !important;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  
+
   /* Neon glow effect */
-  text-shadow: 
-    0 0 5px var(--neon-cyan),
-    0 0 10px var(--neon-cyan),
+  text-shadow: 0 0 5px var(--neon-cyan), 0 0 10px var(--neon-cyan),
     0 0 15px var(--neon-cyan);
 }
 
@@ -71,17 +83,38 @@ h1, h2, h3, h4, h5, h6 {
 .site-title {
   font-family: $accent-font-family !important;
   font-size: 1.2em !important;
-  color: var(--neon-pink) !important;
-  text-shadow: 
-    0 0 10px var(--neon-pink),
-    0 0 20px var(--neon-pink),
-    0 0 30px var(--neon-pink);
+  color: var(--neon-blue) !important;
+  text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue),
+    0 0 30px var(--neon-blue), 0 0 40px var(--neon-blue);
   animation: neonFlicker 2s infinite alternate;
 }
 
 @keyframes neonFlicker {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.8; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes neonPulse {
+  0% {
+    text-shadow: 
+      0 0 10px var(--neon-cyan),
+      0 0 20px var(--neon-cyan),
+      0 0 30px var(--neon-cyan),
+      2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    text-shadow: 
+      0 0 15px var(--neon-cyan),
+      0 0 25px var(--neon-cyan),
+      0 0 35px var(--neon-cyan),
+      0 0 45px var(--neon-cyan),
+      2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
 }
 
 /* Body text */
@@ -102,23 +135,24 @@ body {
   backdrop-filter: blur(10px);
   border: 2px solid var(--retro-cyan);
   border-radius: 15px;
-  box-shadow: 
-    0 0 20px rgba(6, 182, 212, 0.3),
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.3),
     inset 0 0 20px rgba(255, 255, 255, 0.1);
   padding: 2rem;
   margin: 1rem 0;
   position: relative;
-  
+
   /* Retro grid pattern overlay */
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
-      linear-gradient(rgba(6, 182, 212, 0.1) 1px, transparent 1px),
+    background-image: linear-gradient(
+        rgba(6, 182, 212, 0.1) 1px,
+        transparent 1px
+      ),
       linear-gradient(90deg, rgba(6, 182, 212, 0.1) 1px, transparent 1px);
     background-size: 20px 20px;
     pointer-events: none;
@@ -129,24 +163,28 @@ body {
 /* Sidebar styling */
 .sidebar {
   background: var(--bg-gradient-2) !important;
-  border: 2px solid var(--retro-lime);
+  border: 2px solid var(--neon-cyan);
   border-radius: 15px;
-  box-shadow: 
-    0 0 15px rgba(132, 204, 22, 0.4),
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.4),
     inset 0 0 15px rgba(255, 255, 255, 0.1);
-  
+
   .author__avatar img {
-    border: 3px solid var(--neon-pink);
-    box-shadow: 0 0 15px var(--neon-pink);
+    border: 3px solid var(--neon-blue);
+    box-shadow: 0 0 15px var(--neon-blue), 0 0 25px var(--neon-blue);
     border-radius: 50%;
   }
-  
+
   .author__name {
     color: white !important;
     font-family: $header-font-family !important;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 
+      0 0 10px var(--neon-cyan),
+      0 0 20px var(--neon-cyan),
+      0 0 30px var(--neon-cyan),
+      2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: neonPulse 3s infinite alternate;
   }
-  
+
   .author__bio {
     color: rgba(255, 255, 255, 0.9) !important;
     font-weight: 400;
@@ -162,7 +200,7 @@ body {
   background: var(--bg-gradient-3) !important;
   border-bottom: 3px solid var(--retro-orange);
   box-shadow: 0 4px 15px rgba(249, 115, 22, 0.3);
-  
+
   .site-nav a {
     color: white !important;
     font-family: $header-font-family;
@@ -170,10 +208,10 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     transition: all 0.3s ease;
-    
+
     &:hover {
-      color: var(--neon-lime) !important;
-      text-shadow: 0 0 10px var(--neon-lime);
+      color: var(--neon-cyan) !important;
+      text-shadow: 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan);
       transform: translateY(-2px);
     }
   }
@@ -189,17 +227,14 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border-radius: 8px;
-  box-shadow: 
-    0 4px 15px rgba(107, 70, 193, 0.3),
+  box-shadow: 0 4px 15px rgba(107, 70, 193, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
-  
+
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 
-      0 6px 20px rgba(107, 70, 193, 0.4),
-      0 0 15px var(--neon-purple);
-    color: var(--neon-lime) !important;
+    box-shadow: 0 6px 20px rgba(107, 70, 193, 0.4), 0 0 15px var(--neon-blue);
+    color: var(--neon-cyan) !important;
   }
 }
 
@@ -213,10 +248,10 @@ a {
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
-  
+
   &:hover {
-    color: var(--neon-pink) !important;
-    text-shadow: 0 0 8px var(--neon-pink);
+    color: var(--neon-blue) !important;
+    text-shadow: 0 0 8px var(--neon-blue), 0 0 15px var(--neon-blue);
   }
 }
 
@@ -228,7 +263,7 @@ a {
   padding: 0.5rem !important;
   margin: 0.2rem 0;
   transition: all 0.3s ease;
-  
+
   &:hover {
     background: rgba(255, 255, 255, 0.3) !important;
     transform: translateX(5px);
@@ -242,7 +277,7 @@ a {
 
 /* Retro scanlines effect */
 body::after {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
@@ -261,12 +296,24 @@ body::after {
 
 /* Glitch effect for headings */
 @keyframes glitch {
-  0% { transform: translate(0); }
-  20% { transform: translate(-2px, 2px); }
-  40% { transform: translate(-2px, -2px); }
-  60% { transform: translate(2px, 2px); }
-  80% { transform: translate(2px, -2px); }
-  100% { transform: translate(0); }
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 
 h1:hover {
@@ -281,12 +328,12 @@ h1:hover {
   .site-title {
     font-size: 0.9em !important;
   }
-  
+
   .page__content {
     margin: 0.5rem;
     padding: 1rem;
   }
-  
+
   body::after {
     display: none; /* Remove scanlines on mobile for performance */
   }
@@ -305,13 +352,13 @@ h1:hover {
   margin: 1rem 0;
   box-shadow: 0 4px 15px rgba(6, 182, 212, 0.2);
   transition: all 0.3s ease;
-  
+
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(6, 182, 212, 0.3);
     border-color: var(--neon-cyan);
   }
-  
+
   .archive__item-title {
     color: var(--retro-purple) !important;
     font-family: $header-font-family !important;
@@ -319,16 +366,16 @@ h1:hover {
 }
 
 /* Code blocks with retro terminal styling */
-.highlight, pre {
+.highlight,
+pre {
   background: #0a0a0a !important;
   border: 2px solid var(--retro-lime) !important;
   border-radius: 8px;
-  box-shadow: 
-    0 0 15px rgba(132, 204, 22, 0.3),
+  box-shadow: 0 0 15px rgba(132, 204, 22, 0.3),
     inset 0 0 15px rgba(132, 204, 22, 0.1);
-  
+
   &::before {
-    content: '> terminal_' attr(data-lang);
+    content: "> terminal_" attr(data-lang);
     display: block;
     color: var(--neon-lime);
     font-family: $accent-font-family;
