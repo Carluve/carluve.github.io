@@ -409,13 +409,14 @@ h1:hover {
 
 /* Publication entries */
 .archive__item {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(30, 41, 59, 0.8) !important;
   border: 1px solid var(--retro-cyan);
   border-radius: 10px;
   padding: 1rem;
   margin: 1rem 0;
   box-shadow: 0 4px 15px rgba(6, 182, 212, 0.2);
   transition: all 0.3s ease;
+  color: #f1f5f9 !important;
 
   &:hover {
     transform: translateY(-3px);
@@ -424,8 +425,9 @@ h1:hover {
   }
 
   .archive__item-title {
-    color: var(--retro-purple) !important;
+    color: var(--neon-cyan) !important;
     font-family: $header-font-family !important;
+    text-shadow: 0 0 8px var(--neon-cyan);
   }
 }
 
@@ -457,6 +459,64 @@ pre {
 /* Ensure all text is visible in both modes */
 p, li, span, div, article, section {
   color: #f1f5f9 !important;
+}
+
+/* Override white backgrounds from other components */
+.notice {
+  background: rgba(30, 41, 59, 0.8) !important;
+  color: #f1f5f9 !important;
+  border: 1px solid var(--neon-cyan) !important;
+}
+
+.btn {
+  background: rgba(30, 41, 59, 0.8) !important;
+  
+  &:hover {
+    background: rgba(15, 23, 42, 0.9) !important;
+  }
+}
+
+.greedy-nav__toggle {
+  background: rgba(30, 41, 59, 0.9) !important;
+  color: var(--neon-cyan) !important;
+}
+
+.hidden-links {
+  background: rgba(15, 23, 42, 0.95) !important;
+  border: 1px solid var(--neon-cyan) !important;
+  
+  a {
+    color: var(--neon-cyan) !important;
+    
+    &:hover {
+      background: rgba(30, 41, 59, 0.8) !important;
+      color: var(--neon-blue) !important;
+    }
+  }
+}
+
+/* Form elements */
+input, textarea, select, .form-control {
+  background: rgba(30, 41, 59, 0.9) !important;
+  color: #f1f5f9 !important;
+  border: 1px solid var(--neon-cyan) !important;
+}
+
+/* Search form */
+.search-content {
+  background: rgba(15, 23, 42, 0.95) !important;
+  color: #f1f5f9 !important;
+}
+
+/* Any remaining white backgrounds */
+* {
+  &[style*="background: #fff"], 
+  &[style*="background-color: #fff"],
+  &[style*="background: white"],
+  &[style*="background-color: white"] {
+    background: rgba(30, 41, 59, 0.8) !important;
+    color: #f1f5f9 !important;
+  }
 }
 
 /* Archive items styling */
@@ -538,4 +598,46 @@ table {
     border-bottom: 1px solid rgba(34, 211, 238, 0.2);
     color: #f1f5f9 !important;
   }
+}
+
+/* Additional overrides for any remaining white elements */
+.page, .page__inner-wrap, .page__content, .page__meta, .page__lead, .page__header {
+  background: transparent !important;
+  color: #f1f5f9 !important;
+}
+
+.archive {
+  background: transparent !important;
+  color: #f1f5f9 !important;
+}
+
+.taxonomy__section {
+  background: transparent !important;
+  color: #f1f5f9 !important;
+}
+
+/* Override any remaining light backgrounds */
+div, section, article, main, aside, header, footer {
+  &:not(.sidebar):not(.masthead):not(.page__footer) {
+    background: transparent !important;
+  }
+}
+
+/* Ensure content areas are dark */
+.layout--single .page__inner-wrap,
+.layout--archive .page__inner-wrap,
+.layout--posts .page__inner-wrap,
+.layout--categories .page__inner-wrap,
+.layout--tags .page__inner-wrap,
+.layout--collection .page__inner-wrap,
+.layout--search .page__inner-wrap {
+  background: transparent !important;
+}
+
+/* Fix any white strips in specific layouts */
+.entries-list .list__item,
+.entries-grid .grid__item {
+  background: rgba(30, 41, 59, 0.8) !important;
+  color: #f1f5f9 !important;
+  border: 1px solid var(--neon-cyan);
 }

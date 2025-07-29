@@ -70,11 +70,12 @@
 
 /* Retro table styling */
 table {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(30, 41, 59, 0.9) !important;
   border: 2px solid var(--retro-cyan);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(6, 182, 212, 0.2);
+  color: #f1f5f9 !important;
   
   th {
     background: var(--bg-gradient-2) !important;
@@ -88,6 +89,7 @@ table {
   
   td {
     border-bottom: 1px solid rgba(6, 182, 212, 0.2);
+    color: #f1f5f9 !important;
     
     &:hover {
       background: rgba(6, 182, 212, 0.1);
@@ -110,11 +112,12 @@ table {
 
 /* Retro form styling */
 input, textarea, select {
-  background: rgba(255, 255, 255, 0.9) !important;
+  background: rgba(30, 41, 59, 0.9) !important;
   border: 2px solid var(--retro-cyan) !important;
   border-radius: 8px;
   font-family: 'Space Mono', monospace !important;
   transition: all 0.3s ease;
+  color: #f1f5f9 !important;
   
   &:focus {
     border-color: var(--neon-blue) !important;
@@ -127,9 +130,10 @@ input, textarea, select {
 .author__bio {
   position: relative;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(30, 41, 59, 0.3) !important;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--neon-cyan);
+  color: #f1f5f9 !important;
   
   &::before {
     content: '// Bio';
