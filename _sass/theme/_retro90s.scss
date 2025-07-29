@@ -42,11 +42,49 @@
 
 /* Dark mode compatibility */
 [data-theme="dark"] {
-  --text-primary: #f9fafb;
-  --text-secondary: #d1d5db;
-  --bg-gradient-1: linear-gradient(135deg, #7c3aed, #2563eb);
-  --bg-gradient-2: linear-gradient(45deg, #0891b2, #4f46e5);
-  --bg-gradient-3: linear-gradient(90deg, #2563eb, #ea580c);
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  
+  body {
+    background: #0f172a !important;
+    color: #f1f5f9 !important;
+  }
+  
+  .page__content {
+    background: rgba(15, 23, 42, 0.95) !important;
+    color: #f1f5f9 !important;
+  }
+  
+  .sidebar {
+    background: #0f172a !important;
+    color: #f1f5f9 !important;
+  }
+  
+  .masthead {
+    background: #0f172a !important;
+  }
+}
+
+/* Light mode overrides */
+[data-theme="light"], :root {
+  body {
+    background: #0f172a !important;
+    color: #f1f5f9 !important;
+  }
+  
+  .page__content {
+    background: rgba(15, 23, 42, 0.95) !important;
+    color: #f1f5f9 !important;
+  }
+  
+  .sidebar {
+    background: #0f172a !important;
+    color: #f1f5f9 !important;
+  }
+  
+  .masthead {
+    background: #0f172a !important;
+  }
 }
 
 /* ==========================================================================
@@ -120,9 +158,9 @@ h6 {
 /* Body text */
 body {
   font-family: $global-font-family !important;
-  background: var(--bg-gradient-1);
+  background: #0f172a !important; /* Dark navy blue background */
   background-attachment: fixed;
-  color: var(--text-primary);
+  color: #f1f5f9 !important; /* Light text for contrast */
 }
 
 /* ==========================================================================
@@ -131,15 +169,16 @@ body {
 
 /* Main content area with retro styling */
 .page__content {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(15, 23, 42, 0.95) !important; /* Dark navy background */
   backdrop-filter: blur(10px);
-  border: 2px solid var(--retro-cyan);
+  border: 2px solid var(--neon-cyan);
   border-radius: 15px;
-  box-shadow: 0 0 20px rgba(6, 182, 212, 0.3),
-    inset 0 0 20px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.4),
+    inset 0 0 20px rgba(34, 211, 238, 0.1);
   padding: 2rem;
   margin: 1rem 0;
   position: relative;
+  color: #f1f5f9 !important;
 
   /* Retro grid pattern overlay */
   &::before {
@@ -162,11 +201,11 @@ body {
 
 /* Sidebar styling */
 .sidebar {
-  background: var(--bg-gradient-2) !important;
+  background: #0f172a !important; /* Dark navy background */
   border: 2px solid var(--neon-cyan);
   border-radius: 15px;
-  box-shadow: 0 0 15px rgba(6, 182, 212, 0.4),
-    inset 0 0 15px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.4),
+    inset 0 0 15px rgba(34, 211, 238, 0.1);
 
   .author__avatar img {
     border: 3px solid var(--neon-blue);
@@ -197,21 +236,27 @@ body {
 
 /* Navigation styling */
 .masthead {
-  background: var(--bg-gradient-3) !important;
-  border-bottom: 3px solid var(--retro-orange);
-  box-shadow: 0 4px 15px rgba(249, 115, 22, 0.3);
+  background: #0f172a !important; /* Dark navy background */
+  border-bottom: 3px solid var(--neon-cyan);
+  box-shadow: 0 4px 15px rgba(34, 211, 238, 0.4);
 
   .site-nav a {
-    color: white !important;
+    color: var(--neon-cyan) !important;
     font-family: $header-font-family;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     transition: all 0.3s ease;
+    text-shadow: 
+      0 0 10px var(--neon-cyan),
+      0 0 20px var(--neon-cyan);
 
     &:hover {
-      color: var(--neon-cyan) !important;
-      text-shadow: 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan);
+      color: var(--neon-blue) !important;
+      text-shadow: 
+        0 0 15px var(--neon-blue), 
+        0 0 25px var(--neon-blue),
+        0 0 35px var(--neon-blue);
       transform: translateY(-2px);
     }
   }
@@ -219,22 +264,32 @@ body {
 
 /* Retro buttons */
 .btn {
-  background: var(--bg-gradient-1) !important;
-  border: 2px solid var(--retro-purple) !important;
-  color: white !important;
+  background: #1e293b !important; /* Darker navy for buttons */
+  border: 2px solid var(--neon-cyan) !important;
+  color: var(--neon-cyan) !important;
   font-family: $header-font-family !important;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(107, 70, 193, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0 4px 15px rgba(34, 211, 238, 0.3),
+    0 0 10px rgba(34, 211, 238, 0.2),
+    inset 0 1px 0 rgba(34, 211, 238, 0.1);
   transition: all 0.3s ease;
+  text-shadow: 0 0 8px var(--neon-cyan);
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(107, 70, 193, 0.4), 0 0 15px var(--neon-blue);
-    color: var(--neon-cyan) !important;
+    background: #0f172a !important;
+    box-shadow: 
+      0 6px 20px rgba(34, 211, 238, 0.5), 
+      0 0 20px var(--neon-cyan),
+      0 0 30px var(--neon-cyan);
+    color: var(--neon-blue) !important;
+    text-shadow: 
+      0 0 10px var(--neon-blue),
+      0 0 20px var(--neon-blue);
   }
 }
 
@@ -257,17 +312,26 @@ a {
 
 /* Social media links */
 .author__urls a {
-  background: rgba(255, 255, 255, 0.2) !important;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(30, 41, 59, 0.8) !important; /* Dark navy background */
+  border: 1px solid var(--neon-cyan);
   border-radius: 8px;
   padding: 0.5rem !important;
   margin: 0.2rem 0;
   transition: all 0.3s ease;
+  color: var(--neon-cyan) !important;
+  text-shadow: 0 0 8px var(--neon-cyan);
+  box-shadow: 0 0 5px rgba(34, 211, 238, 0.2);
 
   &:hover {
-    background: rgba(255, 255, 255, 0.3) !important;
+    background: rgba(15, 23, 42, 0.9) !important;
     transform: translateX(5px);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 
+      0 0 15px rgba(34, 211, 238, 0.5),
+      0 0 25px rgba(34, 211, 238, 0.3);
+    color: var(--neon-blue) !important;
+    text-shadow: 
+      0 0 10px var(--neon-blue),
+      0 0 20px var(--neon-blue);
   }
 }
 
@@ -383,5 +447,95 @@ pre {
     margin-bottom: 0.5rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--retro-lime);
+  }
+}
+
+/* ==========================================================================
+   ADDITIONAL TEXT VISIBILITY FIXES
+   ========================================================================== */
+
+/* Ensure all text is visible in both modes */
+p, li, span, div, article, section {
+  color: #f1f5f9 !important;
+}
+
+/* Archive items styling */
+.archive__item {
+  background: rgba(30, 41, 59, 0.8) !important;
+  border: 1px solid var(--neon-cyan);
+  color: #f1f5f9 !important;
+  
+  .archive__item-title a {
+    color: var(--neon-cyan) !important;
+    text-shadow: 0 0 8px var(--neon-cyan);
+    
+    &:hover {
+      color: var(--neon-blue) !important;
+      text-shadow: 0 0 15px var(--neon-blue);
+    }
+  }
+  
+  .archive__item-excerpt {
+    color: #cbd5e1 !important;
+  }
+}
+
+/* Publication and portfolio items */
+.list__item {
+  background: rgba(30, 41, 59, 0.8) !important;
+  border: 1px solid var(--neon-cyan);
+  color: #f1f5f9 !important;
+}
+
+/* Footer styling */
+.page__footer {
+  background: #0f172a !important;
+  border-top: 3px solid var(--neon-cyan);
+  color: #f1f5f9 !important;
+  
+  footer {
+    color: #cbd5e1 !important;
+  }
+}
+
+/* Navigation menu items */
+.greedy-nav {
+  background: #0f172a !important;
+  
+  .visible-links a {
+    color: var(--neon-cyan) !important;
+    text-shadow: 0 0 8px var(--neon-cyan);
+    
+    &:hover {
+      color: var(--neon-blue) !important;
+      text-shadow: 0 0 15px var(--neon-blue);
+    }
+  }
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  color: #cbd5e1 !important;
+  
+  a {
+    color: var(--neon-cyan) !important;
+    text-shadow: 0 0 5px var(--neon-cyan);
+  }
+}
+
+/* Tables */
+table {
+  background: rgba(30, 41, 59, 0.9) !important;
+  color: #f1f5f9 !important;
+  
+  th {
+    background: rgba(15, 23, 42, 0.9) !important;
+    color: var(--neon-cyan) !important;
+    text-shadow: 0 0 8px var(--neon-cyan);
+  }
+  
+  td {
+    border-bottom: 1px solid rgba(34, 211, 238, 0.2);
+    color: #f1f5f9 !important;
   }
 }
