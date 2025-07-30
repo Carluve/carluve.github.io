@@ -313,10 +313,53 @@ body {
       }
     }
   }
+  
+  /* Override specific white background elements from _navigation.scss */
+  .greedy-nav__toggle {
+    background: rgba(30, 41, 59, 0.9) !important;
+    color: var(--neon-cyan) !important;
+    border: 1px solid var(--neon-cyan) !important;
+    
+    &:hover {
+      background: rgba(15, 23, 42, 0.9) !important;
+      color: var(--neon-blue) !important;
+    }
+  }
 }
 
 .masthead__inner-wrap {
   background: transparent !important;
+}
+
+/* Force override all navigation white backgrounds */
+.masthead, .masthead * {
+  background-color: transparent !important;
+  
+  &[style*="background: #fff"],
+  &[style*="background-color: #fff"],
+  &[style*="background: white"],
+  &[style*="background-color: white"] {
+    background: #0f172a !important;
+  }
+}
+
+/* Specific overrides for navigation elements that have white backgrounds */
+.site-nav, .site-title, .site-subtitle, .masthead__menu, .masthead__menu-item {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Override the specific elements found in _navigation.scss */
+.greedy-nav .hidden-links {
+  background: rgba(15, 23, 42, 0.95) !important;
+  background-color: rgba(15, 23, 42, 0.95) !important;
+}
+
+.greedy-nav__toggle {
+  background: rgba(30, 41, 59, 0.9) !important;
+  background-color: rgba(30, 41, 59, 0.9) !important;
+  color: var(--neon-cyan) !important;
+  border: 1px solid var(--neon-cyan) !important;
 }
 
 /* Retro buttons */
@@ -592,6 +635,61 @@ input, textarea, select, .form-control {
   color: var(--neon-cyan) !important;
 }
 
+/* ==========================================================================
+   AGGRESSIVE WHITE BACKGROUND REMOVAL
+   ========================================================================== */
+
+/* Target all possible white background elements */
+header, nav, .header, .navigation, .nav, .navbar {
+  background: #0f172a !important;
+  background-color: #0f172a !important;
+  
+  * {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+}
+
+/* Override any inline styles that set white backgrounds */
+[style*="background:#fff"], 
+[style*="background: #fff"],
+[style*="background-color:#fff"],
+[style*="background-color: #fff"],
+[style*="background:white"],
+[style*="background: white"],
+[style*="background-color:white"],
+[style*="background-color: white"] {
+  background: #0f172a !important;
+  background-color: #0f172a !important;
+}
+
+/* Specific navigation element overrides */
+.masthead {
+  * {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+}
+
+/* Menu and dropdown overrides */
+.menu, .dropdown, .dropdown-menu {
+  background: rgba(15, 23, 42, 0.95) !important;
+  background-color: rgba(15, 23, 42, 0.95) !important;
+  border: 1px solid var(--neon-cyan) !important;
+  
+  a, li {
+    background: transparent !important;
+    background-color: transparent !important;
+    color: var(--neon-cyan) !important;
+    
+    &:hover {
+      background: rgba(30, 41, 59, 0.8) !important;
+      background-color: rgba(30, 41, 59, 0.8) !important;
+      color: var(--neon-blue) !important;
+    }
+  }
+}
+
 /* Breadcrumbs and navigation elements */
 .breadcrumbs {
   background: transparent !important;
@@ -632,6 +730,59 @@ h1, h2, h3, h4, h5, h6, p, li, span, div, a {
   &:not(.btn):not(.notice) {
     color: inherit;
   }
+}
+
+/* ==========================================================================
+   NUCLEAR OPTION: REMOVE ALL WHITE BACKGROUNDS
+   ========================================================================== */
+
+/* Global override with highest specificity */
+html body .masthead,
+html body .masthead *,
+html body .greedy-nav,
+html body .greedy-nav *,
+html body header,
+html body header *,
+html body nav,
+html body nav * {
+  background: transparent !important;
+  background-color: transparent !important;
+  
+  &[style] {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+}
+
+/* Ensure masthead container has dark background */
+html body .masthead {
+  background: #0f172a !important;
+  background-color: #0f172a !important;
+}
+
+/* Force all navigation elements to be dark */
+html body .masthead__inner-wrap,
+html body .site-nav,
+html body .greedy-nav,
+html body .greedy-nav__toggle,
+html body .hidden-links {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+html body .greedy-nav {
+  background: #0f172a !important;
+  background-color: #0f172a !important;
+}
+
+html body .hidden-links {
+  background: rgba(15, 23, 42, 0.95) !important;
+  background-color: rgba(15, 23, 42, 0.95) !important;
+}
+
+html body .greedy-nav__toggle {
+  background: rgba(30, 41, 59, 0.9) !important;
+  background-color: rgba(30, 41, 59, 0.9) !important;
 }
 
 /* Archive items styling */
