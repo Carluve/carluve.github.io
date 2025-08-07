@@ -1,0 +1,255 @@
+/* ==========================================================================
+   JAPANESE MINIMAL OVERRIDES - 和風ミニマル追加スタイル
+   ========================================================================== */
+
+/* Enhanced Japanese animations */
+@keyframes sakura-float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-5px) rotate(1deg); }
+}
+
+@keyframes gentle-glow {
+  0%, 100% { box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); }
+  50% { box-shadow: 0 2px 8px rgba(165, 214, 167, 0.2); }
+}
+
+/* Japanese-style focus states */
+input, textarea, select {
+  background: var(--bg-primary) !important;
+  border: 1px solid var(--accent-sage) !important;
+  border-radius: 6px !important;
+  font-family: 'Noto Sans JP', sans-serif !important;
+  color: var(--text-primary) !important;
+  padding: 0.5rem 0.8rem !important;
+  transition: all 0.3s ease;
+  
+  &:focus {
+    border-color: var(--accent-coral) !important;
+    box-shadow: 0 0 0 2px rgba(255, 171, 145, 0.2) !important;
+    outline: none !important;
+  }
+}
+
+/* Enhanced masthead with Japanese elements */
+.masthead__inner-wrap {
+  position: relative;
+  
+  /* Subtle top border inspired by Japanese design */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, 
+      transparent, 
+      var(--accent-coral), 
+      transparent);
+  }
+}
+
+/* Japanese-style pagination */
+.pagination {
+  .current, .page_number {
+    background: var(--bg-primary) !important;
+    border: 1px solid var(--accent-sage) !important;
+    color: var(--text-accent) !important;
+    font-family: 'Noto Sans JP', sans-serif !important;
+    font-weight: 400 !important;
+    border-radius: 6px !important;
+    padding: 0.5rem 0.8rem !important;
+    
+    &:hover {
+      background: var(--sakura-light) !important;
+      border-color: var(--accent-coral) !important;
+      transform: translateY(-1px);
+    }
+  }
+}
+
+/* Enhanced list styling */
+.list__item {
+  animation: gentle-fade 0.6s ease-out;
+  
+  &:nth-child(even) {
+    animation-delay: 0.1s;
+  }
+  
+  &:nth-child(odd) {
+    animation-delay: 0.2s;
+  }
+}
+
+/* Japanese-style notices */
+.notice {
+  background: var(--sakura-light) !important;
+  border: 1px solid var(--accent-coral) !important;
+  border-radius: 8px !important;
+  color: var(--text-accent) !important;
+  padding: 1rem 1.5rem !important;
+  font-family: 'Noto Sans JP', sans-serif !important;
+  
+  &--info {
+    background: var(--sky-blue) !important;
+    border-color: #64b5f6 !important;
+  }
+  
+  &--warning {
+    background: var(--accent-gold) !important;
+    border-color: #ffb74d !important;
+  }
+  
+  &--success {
+    background: var(--matcha-soft) !important;
+    border-color: var(--accent-sage) !important;
+  }
+}
+
+/* Special styling for author bio section */
+.author__bio {
+  position: relative;
+  padding: 1rem !important;
+  background: var(--sakura-pink) !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--accent-sage) !important;
+  margin-top: 1rem;
+  
+  /* Japanese-style corner decoration */
+  &::before {
+    content: '◦';
+    position: absolute;
+    top: -5px;
+    left: 15px;
+    background: var(--bg-primary);
+    padding: 0 0.5rem;
+    color: var(--accent-coral);
+    font-size: 1.2em;
+  }
+}
+
+/* Enhanced navigation menu */
+.greedy-nav {
+  background: var(--bg-primary) !important;
+  
+  .visible-links a {
+    color: var(--text-secondary) !important;
+    font-family: 'Noto Sans JP', sans-serif !important;
+    font-weight: 400 !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 20px !important;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      color: var(--text-accent) !important;
+      background: var(--sakura-light) !important;
+    }
+  }
+  
+  .hidden-links {
+    background: var(--bg-primary) !important;
+    border: 1px solid var(--accent-sage) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  }
+}
+
+/* Japanese-style breadcrumbs enhancement */
+.breadcrumbs {
+  background: var(--sakura-pink) !important;
+  border-radius: 20px !important;
+  padding: 0.5rem 1rem !important;
+  margin-bottom: 1rem;
+  border: 1px solid var(--accent-sage) !important;
+  
+  ol {
+    margin: 0 !important;
+  }
+}
+
+/* Publication and portfolio specific styling */
+.archive__item-teaser {
+  border-radius: 8px !important;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Japanese-style tags */
+.page__taxonomy {
+  .page__taxonomy-item {
+    background: var(--matcha-soft) !important;
+    border: 1px solid var(--accent-sage) !important;
+    border-radius: 15px !important;
+    color: var(--text-accent) !important;
+    font-size: 0.8em !important;
+    padding: 0.3rem 0.8rem !important;
+    margin: 0.2rem !important;
+    
+    &:hover {
+      background: var(--accent-sage) !important;
+      color: white !important;
+    }
+  }
+}
+
+/* Mobile optimizations for Japanese design */
+@media (max-width: 768px) {
+  .masthead__inner-wrap::before {
+    width: 40px;
+    height: 1px;
+  }
+  
+  .author__bio::before {
+    font-size: 1em;
+    top: -3px;
+  }
+  
+  .breadcrumbs {
+    padding: 0.4rem 0.8rem !important;
+    font-size: 0.8em;
+  }
+  
+  .pagination {
+    .current, .page_number {
+      padding: 0.4rem 0.6rem !important;
+      font-size: 0.9em;
+    }
+  }
+}
+
+/* Special Japanese typography enhancements */
+.page__content {
+  /* Japanese text spacing */
+  p {
+    text-indent: 1em; /* Traditional Japanese paragraph indentation */
+  }
+  
+  /* First paragraph no indent */
+  p:first-of-type {
+    text-indent: 0;
+  }
+  
+  /* Japanese-style quotes */
+  blockquote {
+    background: var(--sakura-pink) !important;
+    border-left: 4px solid var(--accent-coral) !important;
+    border-radius: 0 8px 8px 0 !important;
+    padding: 1rem 1.5rem !important;
+    margin: 1.5rem 0 !important;
+    font-style: normal !important;
+    color: var(--text-accent) !important;
+    
+    &::before {
+      content: '「';
+      color: var(--accent-coral);
+      font-size: 1.2em;
+    }
+    
+    &::after {
+      content: '」';
+      color: var(--accent-coral);
+      font-size: 1.2em;
+    }
+  }
+}
