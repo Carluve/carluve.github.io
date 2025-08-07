@@ -10,33 +10,51 @@
    ========================================================================== */
 
 :root {
-  /* Traditional Japanese pastel colors */
+  /* Enhanced Japanese color palette with better contrast */
   --sakura-pink: #fef7f7;        /* 桜色 - Cherry blossom */
   --sakura-light: #fce4ec;       /* Light sakura */
+  --sakura-medium: #f8bbd9;      /* Medium sakura for better visibility */
   --matcha-green: #f1f8e9;       /* 抹茶色 - Matcha */
   --matcha-soft: #e8f5e8;        /* Soft matcha */
+  --matcha-medium: #c8e6c9;      /* Medium matcha for accents */
   --sky-blue: #e3f2fd;           /* 空色 - Sky blue */
-  --mist-gray: #f5f5f5;          /* 霞色 - Mist gray */
+  --sky-medium: #bbdefb;         /* Medium sky blue */
+  --mist-gray: #f8f9fa;          /* 霞色 - Warmer mist gray */
   --warm-white: #fefefe;         /* 白色 - Pure white */
-  --charcoal: #2e2e2e;           /* 炭色 - Charcoal */
-  --soft-black: #1a1a1a;        /* Soft black */
+  --paper-white: #fffef7;        /* 和紙色 - Washi paper white */
+  --charcoal: #2c3e50;           /* 炭色 - Deeper charcoal */
+  --soft-black: #1a252f;        /* Softer black with blue undertone */
   
-  /* Accent colors */
-  --accent-coral: #ffab91;       /* 珊瑚色 - Coral */
-  --accent-sage: #a5d6a7;        /* 若草色 - Young grass */
-  --accent-lavender: #d1c4e9;    /* 薄紫 - Light purple */
-  --accent-gold: #fff3e0;        /* 金色 - Gold */
+  /* Refined accent colors */
+  --accent-coral: #ff8a65;       /* 珊瑚色 - Warmer coral */
+  --accent-sage: #81c784;        /* 若草色 - Vibrant sage */
+  --accent-lavender: #ce93d8;    /* 薄紫 - Richer lavender */
+  --accent-gold: #ffcc02;        /* 金色 - True gold */
+  --accent-indigo: #7986cb;      /* 藍色 - Japanese indigo */
   
-  /* Text colors */
-  --text-primary: #2e2e2e;
-  --text-secondary: #666666;
-  --text-light: #999999;
-  --text-accent: #5d4037;        /* 茶色 - Brown */
+  /* Optimized text colors for readability */
+  --text-primary: #2c3e50;       /* Deeper, more readable */
+  --text-secondary: #546e7a;     /* Blue-gray for better harmony */
+  --text-light: #90a4ae;         /* Lighter but still readable */
+  --text-accent: #5d4037;        /* 茶色 - Traditional brown */
+  --text-link: #3f51b5;          /* Accessible link color */
   
-  /* Background colors */
-  --bg-primary: var(--warm-white);
+  /* Enhanced background system */
+  --bg-primary: var(--paper-white);
   --bg-secondary: var(--mist-gray);
   --bg-accent: var(--sakura-pink);
+  --bg-card: #ffffff;            /* Pure white for cards */
+  --bg-hover: var(--sakura-light);
+  
+  /* Shadow system for depth */
+  --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-strong: 0 8px 24px rgba(0, 0, 0, 0.12);
+  
+  /* Border system */
+  --border-light: 1px solid rgba(0, 0, 0, 0.08);
+  --border-medium: 1px solid rgba(0, 0, 0, 0.12);
+  --border-accent: 2px solid var(--accent-sage);
 }
 
 /* Dark mode - inspired by Japanese night aesthetics */
@@ -62,47 +80,105 @@
 }
 
 /* ==========================================================================
-   TYPOGRAPHY - 和文タイポグラフィ
+   TYPOGRAPHY - 和文タイポグラフィ (Advanced UX)
    ========================================================================== */
 
-/* Japanese-inspired font families */
-$japanese-sans: 'Noto Sans JP', 'M PLUS 1p', 'Hiragino Sans', 'Yu Gothic', sans-serif;
-$japanese-serif: 'Noto Serif JP', 'Yu Mincho', 'Hiragino Mincho ProN', serif;
-$japanese-mono: 'M PLUS 1p', 'Consolas', monospace;
+/* Japanese-inspired font families with optimal readability */
+$japanese-sans: 'Noto Sans JP', 'M PLUS 1p', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
+$japanese-serif: 'Noto Serif JP', 'Yu Mincho', 'Hiragino Mincho ProN', 'Times New Roman', serif;
+$japanese-mono: 'M PLUS 1p', 'SF Mono', 'Monaco', 'Consolas', monospace;
 
 /* Override theme typography */
 $global-font-family: $japanese-sans;
 $header-font-family: $japanese-serif;
 $caption-font-family: $japanese-sans;
 
-/* Body styling */
+/* Body styling with enhanced readability */
 body {
   font-family: $japanese-sans !important;
   background: var(--bg-primary) !important;
   color: var(--text-primary) !important;
-  line-height: 1.8; /* Japanese text needs more line height */
-  font-weight: 300;
-  transition: all 0.3s ease;
+  line-height: 1.75; /* Optimal for Japanese reading rhythm */
+  font-weight: 400; /* Better readability than 300 */
+  font-size: 16px; /* Base size for accessibility */
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth easing */
+  
+  /* Japanese reading optimization */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern" 1, "liga" 1;
 }
 
-/* Headings with Japanese elegance */
+/* Enhanced headings with perfect hierarchy */
 h1, h2, h3, h4, h5, h6 {
   font-family: $japanese-serif !important;
-  font-weight: 400 !important;
   color: var(--text-accent) !important;
-  line-height: 1.4;
-  margin-bottom: 1.5rem;
-  letter-spacing: 0.02em;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
   
-  /* Subtle underline inspired by Japanese calligraphy */
+  /* Improved visual hierarchy */
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 500 !important;
+  margin-bottom: 1.5rem;
+  
+  &::after {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-coral), var(--accent-sage));
+    margin: 1rem 0;
+    border-radius: 1px;
+  }
+}
+
+h2 {
+  font-size: 1.875rem;
+  font-weight: 500 !important;
+  
   &::after {
     content: '';
     display: block;
     width: 3rem;
     height: 1px;
-    background: linear-gradient(90deg, var(--accent-coral), transparent);
-    margin: 0.5rem 0;
+    background: var(--accent-sage);
+    margin: 0.75rem 0;
+    border-radius: 0.5px;
   }
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500 !important;
+  color: var(--text-primary) !important;
+  
+  &::before {
+    content: '◦ ';
+    color: var(--accent-coral);
+    font-weight: 300;
+  }
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500 !important;
+  color: var(--text-primary) !important;
+}
+
+h5, h6 {
+  font-size: 1.125rem;
+  font-weight: 500 !important;
+  color: var(--text-secondary) !important;
 }
 
 /* Site title with Japanese aesthetic */
@@ -123,77 +199,222 @@ h1, h2, h3, h4, h5, h6 {
    LAYOUT - 和風レイアウト
    ========================================================================== */
 
-/* Main content with Japanese spacing principles */
+/* Enhanced main content with optimal UX */
 .page__content {
-  background: var(--bg-primary) !important;
-  border: none !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  padding: 3rem 2rem !important;
-  margin: 0 !important;
+  background: var(--bg-card) !important;
+  border: var(--border-light) !important;
+  border-radius: 12px !important;
+  box-shadow: var(--shadow-light) !important;
+  padding: 3rem 2.5rem !important;
+  margin: 1.5rem 0 !important;
   color: var(--text-primary) !important;
+  position: relative;
   
-  /* Subtle left border inspired by Japanese binding */
-  border-left: 3px solid var(--accent-sage) !important;
-  
-  /* Japanese-style spacing */
-  p {
-    margin-bottom: 1.5rem;
-    text-align: justify;
+  /* Elegant left accent inspired by Japanese binding */
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    bottom: 2rem;
+    width: 4px;
+    background: linear-gradient(180deg, 
+      var(--accent-coral), 
+      var(--accent-sage), 
+      var(--accent-lavender));
+    border-radius: 0 2px 2px 0;
   }
-}
-
-/* Navigation with minimalist Japanese design */
-.masthead {
-  background: var(--bg-primary) !important;
-  border-bottom: 1px solid var(--accent-sage) !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
   
-  .site-nav a {
-    color: var(--text-secondary) !important;
-    font-family: $japanese-sans !important;
-    font-weight: 400 !important;
-    text-transform: none !important;
-    letter-spacing: 0.02em;
-    transition: all 0.3s ease;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+  /* Optimized paragraph spacing */
+  p {
+    margin-bottom: 1.25rem;
+    text-align: left; /* Better for screen reading */
+    max-width: 75ch; /* Optimal reading width */
     
-    &:hover {
-      color: var(--text-accent) !important;
-      background: var(--sakura-light) !important;
-      transform: none !important;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    /* First paragraph special styling */
+    &:first-of-type {
+      font-size: 1.1em;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+    }
+  }
+  
+  /* Enhanced lists */
+  ul, ol {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+    
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+      
+      &::marker {
+        color: var(--accent-coral);
+      }
+    }
+  }
+  
+  /* Better blockquote styling */
+  blockquote {
+    background: var(--sakura-pink) !important;
+    border-left: 4px solid var(--accent-coral) !important;
+    border-radius: 0 8px 8px 0 !important;
+    padding: 1.5rem 2rem !important;
+    margin: 2rem 0 !important;
+    font-style: italic !important;
+    color: var(--text-accent) !important;
+    position: relative;
+    
+    &::before {
+      content: '"';
+      font-size: 3rem;
+      color: var(--accent-coral);
+      position: absolute;
+      top: -0.5rem;
+      left: 1rem;
+      font-family: $japanese-serif;
+      opacity: 0.3;
     }
   }
 }
 
-/* Sidebar with Japanese card aesthetic */
-.sidebar {
-  background: var(--bg-primary) !important;
-  border: 1px solid var(--accent-sage) !important;
-  border-radius: 8px !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
-  padding: 2rem !important;
+/* Enhanced navigation with superior UX */
+.masthead {
+  background: var(--bg-card) !important;
+  border-bottom: var(--border-light) !important;
+  box-shadow: var(--shadow-light) !important;
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
   
-  .author__avatar img {
-    border: 2px solid var(--accent-sage) !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-    border-radius: 50% !important;
+  .site-nav a {
+    color: var(--text-secondary) !important;
+    font-family: $japanese-sans !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+    letter-spacing: 0.01em;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    padding: 0.75rem 1.25rem;
+    border-radius: 25px;
+    position: relative;
+    margin: 0 0.25rem;
+    
+    /* Subtle background indicator */
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: var(--bg-hover);
+      border-radius: 25px;
+      transform: translate(-50%, -50%);
+      transition: all 0.3s ease;
+      z-index: -1;
+    }
+    
+    &:hover {
+      color: var(--text-accent) !important;
+      transform: translateY(-1px) !important;
+      
+      &::before {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    
+    /* Active state */
+    &.current {
+      color: var(--text-accent) !important;
+      background: var(--sakura-light) !important;
+      font-weight: 600 !important;
+    }
+  }
+}
+
+/* Enhanced sidebar with perfect visual hierarchy */
+.sidebar {
+  background: var(--bg-card) !important;
+  border: var(--border-light) !important;
+  border-radius: 16px !important;
+  box-shadow: var(--shadow-medium) !important;
+  padding: 2.5rem !important;
+  position: relative;
+  overflow: hidden;
+  
+  /* Subtle background pattern */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, var(--sakura-pink) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+  
+  .author__avatar {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    
+    img {
+      border: 3px solid var(--accent-sage) !important;
+      box-shadow: var(--shadow-medium) !important;
+      border-radius: 50% !important;
+      transition: all 0.3s ease;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: var(--shadow-strong) !important;
+        border-color: var(--accent-coral) !important;
+      }
+    }
   }
   
   .author__name {
     color: var(--text-accent) !important;
     font-family: $japanese-serif !important;
-    font-weight: 500 !important;
-    font-size: 1.2em;
-    margin-bottom: 0.5rem;
+    font-weight: 600 !important;
+    font-size: 1.4em;
+    margin-bottom: 0.75rem;
+    text-align: center;
+    letter-spacing: 0.02em;
+    
+    /* Subtle underline */
+    &::after {
+      content: '';
+      display: block;
+      width: 2rem;
+      height: 2px;
+      background: var(--accent-coral);
+      margin: 0.5rem auto;
+      border-radius: 1px;
+    }
   }
   
   .author__bio {
     color: var(--text-secondary) !important;
-    font-weight: 300 !important;
-    line-height: 1.6;
-    font-size: 0.9em;
+    font-weight: 400 !important;
+    line-height: 1.7;
+    font-size: 0.95em;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: var(--sakura-pink);
+    border-radius: 12px;
+    border: var(--border-light);
   }
 }
 
@@ -201,26 +422,67 @@ h1, h2, h3, h4, h5, h6 {
    BUTTONS & INTERACTIVE ELEMENTS - ボタンとインタラクティブ要素
    ========================================================================== */
 
-/* Minimalist Japanese buttons */
+/* Enhanced buttons with superior interaction design */
 .btn {
-  background: var(--bg-primary) !important;
-  border: 1px solid var(--accent-sage) !important;
+  background: var(--bg-card) !important;
+  border: var(--border-medium) !important;
   color: var(--text-accent) !important;
   font-family: $japanese-sans !important;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   text-transform: none !important;
-  letter-spacing: 0.02em;
-  border-radius: 20px !important;
-  padding: 0.5rem 1.5rem !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
-  transition: all 0.3s ease;
+  letter-spacing: 0.01em;
+  border-radius: 25px !important;
+  padding: 0.75rem 2rem !important;
+  box-shadow: var(--shadow-light) !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  
+  /* Ripple effect background */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, var(--accent-coral) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    transition: all 0.6s ease;
+    opacity: 0;
+  }
   
   &:hover {
-    background: var(--sakura-light) !important;
+    background: var(--bg-hover) !important;
     border-color: var(--accent-coral) !important;
     color: var(--text-accent) !important;
-    transform: translateY(-1px) !important;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: var(--shadow-medium) !important;
+    
+    &::before {
+      width: 300px;
+      height: 300px;
+      opacity: 0.1;
+    }
+  }
+  
+  &:active {
+    transform: translateY(0) !important;
+    box-shadow: var(--shadow-light) !important;
+  }
+  
+  /* Primary button variant */
+  &--primary {
+    background: var(--accent-coral) !important;
+    color: white !important;
+    border-color: var(--accent-coral) !important;
+    
+    &:hover {
+      background: #ff7043 !important;
+      border-color: #ff7043 !important;
+      color: white !important;
+    }
   }
 }
 
@@ -238,22 +500,85 @@ a {
   }
 }
 
-/* Social media links in sidebar */
-.author__urls a {
-  background: var(--sakura-light) !important;
-  border: 1px solid var(--accent-sage) !important;
-  border-radius: 6px !important;
-  padding: 0.4rem 0.8rem !important;
-  margin: 0.2rem 0 !important;
-  color: var(--text-secondary) !important;
-  font-size: 0.85em;
-  transition: all 0.3s ease;
+/* Enhanced social media links with better UX */
+.author__urls {
+  margin-top: 1.5rem;
   
-  &:hover {
-    background: var(--matcha-soft) !important;
-    border-color: var(--accent-sage) !important;
-    color: var(--text-accent) !important;
-    transform: translateX(3px) !important;
+  /* Section title */
+  &::before {
+    content: 'Connect';
+    display: block;
+    font-family: $japanese-serif;
+    font-size: 0.9em;
+    color: var(--text-accent);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+  
+  a {
+    background: var(--bg-card) !important;
+    border: var(--border-light) !important;
+    border-radius: 12px !important;
+    padding: 0.75rem 1rem !important;
+    margin: 0.5rem 0 !important;
+    color: var(--text-secondary) !important;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+    position: relative;
+    
+    /* Icon styling */
+    i {
+      margin-right: 0.75rem;
+      width: 1.2em;
+      color: var(--accent-coral);
+      transition: all 0.3s ease;
+    }
+    
+    /* Hover effects */
+    &:hover {
+      background: var(--bg-hover) !important;
+      border-color: var(--accent-coral) !important;
+      color: var(--text-accent) !important;
+      transform: translateX(5px) scale(1.02) !important;
+      box-shadow: var(--shadow-light) !important;
+      
+      i {
+        color: var(--accent-coral);
+        transform: scale(1.1);
+      }
+    }
+    
+    /* Active state */
+    &:active {
+      transform: translateX(3px) scale(1.01) !important;
+    }
+    
+    /* Specific social platform colors on hover */
+    &[href*="github"]:hover {
+      border-color: #333 !important;
+      i { color: #333; }
+    }
+    
+    &[href*="linkedin"]:hover {
+      border-color: #0077b5 !important;
+      i { color: #0077b5; }
+    }
+    
+    &[href*="twitter"]:hover {
+      border-color: #1da1f2 !important;
+      i { color: #1da1f2; }
+    }
+    
+    &[href*="scholar"]:hover {
+      border-color: #4285f4 !important;
+      i { color: #4285f4; }
+    }
   }
 }
 
@@ -261,31 +586,54 @@ a {
    CONTENT ELEMENTS - コンテンツ要素
    ========================================================================== */
 
-/* Archive items with Japanese card design */
+/* Enhanced archive items with superior visual hierarchy */
 .archive__item {
-  background: var(--bg-primary) !important;
-  border: 1px solid var(--accent-sage) !important;
-  border-radius: 8px !important;
-  padding: 1.5rem !important;
-  margin: 1rem 0 !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
-  transition: all 0.3s ease;
+  background: var(--bg-card) !important;
+  border: var(--border-light) !important;
+  border-radius: 16px !important;
+  padding: 2rem !important;
+  margin: 1.5rem 0 !important;
+  box-shadow: var(--shadow-light) !important;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: var(--text-primary) !important;
+  position: relative;
+  overflow: hidden;
+  
+  /* Subtle accent line */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-coral), var(--accent-sage));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
   
   &:hover {
-    transform: translateY(-2px) !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    transform: translateY(-4px) !important;
+    box-shadow: var(--shadow-strong) !important;
     border-color: var(--accent-coral) !important;
+    
+    &::before {
+      transform: scaleX(1);
+    }
   }
   
   .archive__item-title {
     color: var(--text-accent) !important;
     font-family: $japanese-serif !important;
-    font-weight: 500 !important;
-    margin-bottom: 0.5rem;
+    font-weight: 600 !important;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
     
     a {
       border-bottom: none !important;
+      transition: all 0.3s ease;
       
       &:hover {
         color: var(--accent-coral) !important;
@@ -295,8 +643,40 @@ a {
   
   .archive__item-excerpt {
     color: var(--text-secondary) !important;
-    line-height: 1.6;
-    font-size: 0.9em;
+    line-height: 1.7;
+    font-size: 0.95em;
+    margin-bottom: 1rem;
+    
+    /* Limit text for better readability */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  /* Meta information styling */
+  .archive__item-date {
+    color: var(--text-light) !important;
+    font-size: 0.85em;
+    font-weight: 500;
+    
+    &::before {
+      content: '📅 ';
+      margin-right: 0.25rem;
+    }
+  }
+  
+  /* Category/tag styling */
+  .archive__item-category {
+    display: inline-block;
+    background: var(--sakura-light);
+    color: var(--text-accent);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-top: 1rem;
+    border: var(--border-light);
   }
 }
 
