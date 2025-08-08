@@ -337,11 +337,6 @@ document.addEventListener('DOMContentLoaded', function() {
     addReadingProgress();
     addThemeTransitions();
     
-    // Welcome notification
-    setTimeout(() => {
-        createNotification('Welcome to the Japanese minimal experience! 🌸', 'success');
-    }, 1000);
-    
     // Add a subtle Japanese startup message
     console.log(`
     ┌─────────────────────────────────────┐

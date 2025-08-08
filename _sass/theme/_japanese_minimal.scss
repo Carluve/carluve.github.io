@@ -188,12 +188,6 @@ h3 {
   font-size: 1.5rem;
   font-weight: 500 !important;
   color: var(--text-primary) !important;
-  
-  &::before {
-    content: '◦ ';
-    color: var(--accent-coral);
-    font-weight: 300;
-  }
 }
 
 h4 {
@@ -375,19 +369,7 @@ h5, h6 {
   position: relative;
   overflow: hidden;
   
-  /* Subtle background pattern */
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(circle, var(--sakura-pink) 1px, transparent 1px);
-    background-size: 20px 20px;
-    opacity: 0.3;
-    pointer-events: none;
-  }
+
   
   .author__avatar {
     text-align: center;

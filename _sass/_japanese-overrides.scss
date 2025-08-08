@@ -116,16 +116,16 @@ input, textarea, select {
   border: 1px solid var(--accent-sage) !important;
   margin-top: 1rem;
   
-  /* Japanese-style corner decoration */
+  /* Clean corner styling */
   &::before {
-    content: '◦';
+    content: '';
     position: absolute;
-    top: -5px;
-    left: 15px;
-    background: var(--bg-primary);
-    padding: 0 0.5rem;
-    color: var(--accent-coral);
-    font-size: 1.2em;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--accent-coral);
+    border-radius: 0 2px 2px 0;
   }
 }
 
