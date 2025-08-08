@@ -1,0 +1,394 @@
+/* ==========================================================================
+   JAPANESE ADVANCED FEATURES - 高度な和風機能
+   ========================================================================== */
+
+/* Enhanced dark mode compatibility */
+[data-theme="dark"] {
+  /* Ensure all elements adapt properly */
+  .page__content,
+  .sidebar,
+  .masthead,
+  .archive__item,
+  .btn {
+    background: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-light) !important;
+  }
+  
+  /* Fix navigation in dark mode */
+  .masthead .site-nav a {
+    color: var(--text-secondary) !important;
+    
+    &:hover,
+    &.current {
+      color: var(--text-primary) !important;
+      background: var(--bg-hover) !important;
+    }
+  }
+  
+  /* Fix sidebar elements */
+  .author__name {
+    color: var(--text-primary) !important;
+  }
+  
+  .author__bio {
+    background: var(--bg-hover) !important;
+    color: var(--text-secondary) !important;
+  }
+  
+  /* Fix social links */
+  .author__urls a {
+    background: var(--bg-hover) !important;
+    color: var(--text-secondary) !important;
+    border-color: var(--border-medium) !important;
+    
+    &:hover {
+      background: var(--bg-accent) !important;
+      color: var(--text-primary) !important;
+    }
+  }
+  
+  /* Fix archive items */
+  .archive__item {
+    .archive__item-title a {
+      color: var(--text-primary) !important;
+      
+      &:hover {
+        color: var(--accent-coral) !important;
+      }
+    }
+    
+    .archive__item-excerpt {
+      color: var(--text-secondary) !important;
+    }
+  }
+  
+  /* Fix buttons */
+  .btn {
+    &:not(.btn--primary) {
+      background: var(--bg-card) !important;
+      color: var(--text-primary) !important;
+      border-color: var(--border-medium) !important;
+      
+      &:hover {
+        background: var(--bg-hover) !important;
+        border-color: var(--accent-coral) !important;
+      }
+    }
+  }
+}
+
+/* Japanese-style loading states */
+.loading-skeleton {
+  background: linear-gradient(90deg, 
+    var(--sakura-light) 25%, 
+    var(--sakura-pink) 50%, 
+    var(--sakura-light) 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+  border-radius: 4px;
+  
+  &.skeleton-text {
+    height: 1em;
+    margin: 0.5em 0;
+  }
+  
+  &.skeleton-title {
+    height: 1.5em;
+    width: 60%;
+    margin: 1em 0;
+  }
+  
+  &.skeleton-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+  }
+}
+
+@keyframes skeleton-loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Enhanced Japanese typography */
+.japanese-text {
+  /* Optimal spacing for Japanese characters */
+  letter-spacing: 0.05em;
+  line-height: 1.8;
+  
+  /* Traditional Japanese punctuation handling */
+  &.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  
+  /* Ruby text support for furigana */
+  ruby {
+    ruby-align: center;
+    
+    rt {
+      font-size: 0.6em;
+      color: var(--text-light);
+    }
+  }
+}
+
+/* Japanese-style form elements */
+.form-jp {
+  .form-group {
+    margin-bottom: 1.5rem;
+    
+    label {
+      display: block;
+      font-family: $japanese-serif;
+      font-weight: 500;
+      color: var(--text-accent);
+      margin-bottom: 0.5rem;
+      
+      &.required::after {
+        content: ' *';
+        color: var(--accent-coral);
+      }
+    }
+    
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: var(--border-medium);
+      border-radius: 8px;
+      background: var(--bg-card);
+      color: var(--text-primary);
+      font-family: $japanese-sans;
+      transition: all 0.3s ease;
+      
+      &:focus {
+        border-color: var(--accent-coral);
+        box-shadow: 0 0 0 3px rgba(255, 138, 101, 0.1);
+        outline: none;
+      }
+      
+      &:invalid {
+        border-color: #f44336;
+        box-shadow: 0 0 0 3px rgba(244, 67, 54, 0.1);
+      }
+      
+      &::placeholder {
+        color: var(--text-light);
+        font-style: italic;
+      }
+    }
+    
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+}
+
+/* Japanese-style modal/dialog */
+.modal-jp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .modal-content {
+    background: var(--bg-card);
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: var(--shadow-strong);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: var(--border-light);
+      
+      h3 {
+        margin: 0;
+        font-family: $japanese-serif;
+        color: var(--text-accent);
+      }
+      
+      .modal-close {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: var(--text-light);
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        
+        &:hover {
+          background: var(--bg-hover);
+          color: var(--text-primary);
+        }
+      }
+    }
+    
+    .modal-body {
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+    
+    .modal-footer {
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-end;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: var(--border-light);
+    }
+  }
+  
+  &.active .modal-content {
+    transform: scale(1);
+  }
+}
+
+/* Japanese-style accordion */
+.accordion-jp {
+  border: var(--border-light);
+  border-radius: 8px;
+  overflow: hidden;
+  
+  .accordion-item {
+    border-bottom: var(--border-light);
+    
+    &:last-child {
+      border-bottom: none;
+    }
+    
+    .accordion-header {
+      background: var(--bg-card);
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      &:hover {
+        background: var(--bg-hover);
+      }
+      
+      h4 {
+        margin: 0;
+        font-family: $japanese-serif;
+        color: var(--text-accent);
+      }
+      
+      .accordion-icon {
+        transition: transform 0.3s ease;
+        color: var(--accent-coral);
+      }
+      
+      &.active .accordion-icon {
+        transform: rotate(180deg);
+      }
+    }
+    
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      background: var(--bg-primary);
+      
+      .accordion-body {
+        padding: 1.5rem;
+        color: var(--text-primary);
+        line-height: 1.6;
+      }
+      
+      &.active {
+        max-height: 500px;
+      }
+    }
+  }
+}
+
+/* Enhanced responsive utilities */
+@media (max-width: 1200px) {
+  .container-jp {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-jp .modal-content {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .form-jp .form-actions {
+    flex-direction: column;
+    
+    .btn {
+      width: 100%;
+    }
+  }
+  
+  .accordion-jp .accordion-header {
+    padding: 0.75rem 1rem;
+    
+    h4 {
+      font-size: 1rem;
+    }
+  }
+}
+
+/* Print optimizations */
+@media print {
+  .modal-jp,
+  .accordion-jp .accordion-header .accordion-icon {
+    display: none !important;
+  }
+  
+  .accordion-jp .accordion-content {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  
+  .form-jp input,
+  .form-jp textarea {
+    border: 1px solid #000 !important;
+    background: white !important;
+  }
+}

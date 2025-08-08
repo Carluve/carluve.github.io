@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function() {
         addSeasonalColors();
     }
     
-    // Enhanced CSS with advanced Japanese animations
+    // Enhanced CSS with advanced Japanese animations and dark mode fixes
     const style = document.createElement('style');
     style.textContent = `
         * {
@@ -202,23 +202,23 @@ document.addEventListener('DOMContentLoaded', function() {
         
         @keyframes gentle-float {
             0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-3px); }
+            50% { transform: translateY(-2px); }
         }
         
-        @keyframes zen-pulse {
-            0%, 100% { box-shadow: 0 0 0 0 rgba(255, 171, 145, 0.4); }
-            50% { box-shadow: 0 0 0 10px rgba(255, 171, 145, 0); }
+        @keyframes zen-glow {
+            0%, 100% { box-shadow: 0 2px 8px rgba(129, 199, 132, 0.3); }
+            50% { box-shadow: 0 4px 16px rgba(129, 199, 132, 0.5); }
         }
         
         .fade-in-complete {
-            animation: gentle-float 6s ease-in-out infinite;
+            animation: gentle-float 8s ease-in-out infinite;
         }
         
         .author__avatar img:hover {
-            animation: zen-pulse 2s ease-in-out;
+            animation: zen-glow 2s ease-in-out;
         }
         
-        /* Reading progress indicator */
+        /* Enhanced reading progress indicator */
         .reading-progress {
             position: fixed;
             top: 0;
@@ -228,13 +228,35 @@ document.addEventListener('DOMContentLoaded', function() {
             background: linear-gradient(90deg, var(--accent-coral), var(--accent-sage));
             z-index: 1000;
             transition: width 0.3s ease;
+            box-shadow: 0 0 10px rgba(255, 138, 101, 0.3);
         }
         
-        /* Smooth focus indicators */
+        /* Dark mode specific fixes */
+        [data-theme="dark"] .reading-progress {
+            box-shadow: 0 0 10px rgba(255, 112, 67, 0.5);
+        }
+        
+        /* Enhanced focus indicators */
         *:focus {
             outline: 2px solid var(--accent-coral) !important;
             outline-offset: 2px !important;
             border-radius: 4px !important;
+        }
+        
+        /* Smooth theme transition */
+        html {
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+        
+        /* Japanese-style selection */
+        ::selection {
+            background: var(--accent-coral);
+            color: white;
+        }
+        
+        ::-moz-selection {
+            background: var(--accent-coral);
+            color: white;
         }
         
         @media (prefers-reduced-motion: reduce) {
@@ -247,7 +269,7 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
     
-    // Add reading progress indicator
+    // Enhanced reading progress indicator
     function addReadingProgress() {
         const progressBar = document.createElement('div');
         progressBar.className = 'reading-progress';
@@ -256,14 +278,69 @@ document.addEventListener('DOMContentLoaded', function() {
         window.addEventListener('scroll', () => {
             const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = (winScroll / height) * 100;
+            const scrolled = Math.min((winScroll / height) * 100, 100);
             progressBar.style.width = scrolled + '%';
         });
     }
     
-    // Start the Japanese experience
+    // Add theme transition effects
+    function addThemeTransitions() {
+        const themeToggle = document.querySelector('[data-theme-toggle]');
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                document.body.style.transition = 'all 0.5s ease';
+                setTimeout(() => {
+                    document.body.style.transition = '';
+                }, 500);
+            });
+        }
+    }
+    
+    // Add Japanese-style notifications
+    function createNotification(message, type = 'info') {
+        const notification = document.createElement('div');
+        notification.className = `notification notification--${type}`;
+        notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--bg-card);
+            border: var(--border-medium);
+            border-left: 4px solid var(--accent-${type === 'success' ? 'sage' : 'coral'});
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            box-shadow: var(--shadow-medium);
+            z-index: 1000;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+            max-width: 300px;
+            font-family: 'Noto Sans JP', sans-serif;
+            color: var(--text-primary);
+        `;
+        notification.textContent = message;
+        document.body.appendChild(notification);
+        
+        // Animate in
+        setTimeout(() => {
+            notification.style.transform = 'translateX(0)';
+        }, 100);
+        
+        // Auto remove
+        setTimeout(() => {
+            notification.style.transform = 'translateX(100%)';
+            setTimeout(() => notification.remove(), 300);
+        }, 3000);
+    }
+    
+    // Start the enhanced Japanese experience
     initJapaneseEffects();
     addReadingProgress();
+    addThemeTransitions();
+    
+    // Welcome notification
+    setTimeout(() => {
+        createNotification('Welcome to the Japanese minimal experience! 🌸', 'success');
+    }, 1000);
     
     // Add a subtle Japanese startup message
     console.log(`
