@@ -67,6 +67,8 @@
     .author__urls { font-size: 0.85em; }
     padding-right: 0.5rem;
   }
+
+  &.sticky { position: static !important; } // neutralize legacy class usage
 }
 
 .sidebar__right {
