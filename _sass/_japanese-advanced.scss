@@ -226,8 +226,9 @@
     padding: 2rem;
     max-width: 500px;
     width: 90%;
-    max-height: 80vh;
-    overflow-y: auto;
+    /* Allow page scroll instead of nested modal scroll unless content extremely long */
+    max-height: none;
+    overflow: visible;
     box-shadow: var(--shadow-strong);
     transform: scale(0.9);
     transition: transform 0.3s ease;

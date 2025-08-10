@@ -13,8 +13,8 @@ body {
   background-color: var(--global-bg-color);
 
   margin: 0;
-  padding: $masthead-height 0 0;
-  padding-bottom: 9em;
+  padding: $masthead-height 0 0; // top offset for masthead
+  padding-bottom: 6em; // reduce footer gap to minimize vertical scroll length
   font-family: $global-font-family;
   line-height: 1.5;
 
@@ -133,6 +133,25 @@ tt, code, kbd, samp, pre {
 
 pre {
   overflow-x: auto; /* add scrollbars to wide code blocks*/
+}
+
+/* Utility: thin scrollbars (WebKit) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.15);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.30);
+  border: 2px solid transparent;
 }
 
 a > code,
