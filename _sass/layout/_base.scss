@@ -14,7 +14,7 @@ body {
 
   margin: 0;
   padding: $masthead-height 0 0; // top offset for masthead
-  padding-bottom: 4em; // further reduce footer gap
+  padding-bottom: 9em; // restore original footer spacing
   font-family: $global-font-family;
   line-height: 1.5;
 

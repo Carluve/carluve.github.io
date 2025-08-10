@@ -18,13 +18,10 @@
   }
 
   @media screen and (min-width: $sidebar-screen-min-width) {
-    // Revert to normal document flow to avoid nested scrollbar artifacts.
-    position: static;
-    top: auto;
-    height: auto;
-    max-height: none;
-    overflow: visible;
-    padding-top: 0;
+    height: 100vh;
+    overflow-y: auto;               // original: independent scroll
+    position: fixed;
+    padding-top: $masthead-height;
   }
 
   @include breakpoint($large) {
@@ -62,13 +59,7 @@
     width: 100%;
   }
 
-  &.sidebar--narrow {
-    .author__bio { font-size: 0.85em; line-height: 1.4; }
-    .author__urls { font-size: 0.85em; }
-    padding-right: 0.5rem;
-  }
-
-  &.sticky { position: static !important; } // neutralize legacy class usage
+  // remove custom narrow + sticky overrides (restored original)
 }
 
 .sidebar__right {
