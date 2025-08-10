@@ -20,6 +20,15 @@
 
 <meta http-equiv="cleartype" content="on">
 
+<!-- Performance: preconnect to font hosts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Canonical URL fallback if not set by seo tag -->
+{% if page.url and page.url != '/' %}
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+{% endif %}
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-R0286NCHB1"></script>
 <script>
