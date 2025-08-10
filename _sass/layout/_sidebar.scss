@@ -18,12 +18,12 @@
   }
 
   @media screen and (min-width: $sidebar-screen-min-width) {
-    // Previously fixed + independent scroll; changed to sticky to remove dual scrollbars.
-    position: sticky;
-    top: $masthead-height;
+    // Revert to normal document flow to avoid nested scrollbar artifacts.
+    position: static;
+    top: auto;
     height: auto;
-    max-height: calc(100vh - #{$masthead-height});
-    overflow-y: visible; // allow page to own scroll; avoid nested scrollbars
+    max-height: none;
+    overflow: visible;
     padding-top: 0;
   }
 
@@ -60,6 +60,12 @@
 
   img {
     width: 100%;
+  }
+
+  &.sidebar--narrow {
+    .author__bio { font-size: 0.85em; line-height: 1.4; }
+    .author__urls { font-size: 0.85em; }
+    padding-right: 0.5rem;
   }
 }
 
