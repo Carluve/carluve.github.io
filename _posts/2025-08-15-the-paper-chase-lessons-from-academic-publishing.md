@@ -2,7 +2,7 @@
 title: "The Paper Chase: Lessons from the Trenches of Academic Publishing"
 date: 2025-08-15
 categories: [Academia, PhD, Writing]
-permalink: /posts/2025/08/the-paper-chase-lessons-from-academic-publishing/
+permalink: /posts/2025/08/academic-publishing-lessons/
 tags:
   - PhD Life
   - Academic Writing
@@ -10,15 +10,17 @@ tags:
   - Research
   - Productivity
 summary: "PhD life isn't just data and deadlines — it’s also teamwork, trial-and-error, and the occasional existential crisis over tracked changes."
+image: /images/post/2025/august/papers25.png
 ---
 
 _PhD life isn't just data and deadlines — it’s also teamwork, trial-and-error, and the occasional existential crisis over tracked changes._
 
 I hadn’t written about this before, but I really felt like sharing some thoughts. Over the past few months, I’ve been fully immersed in writing and revising academic papers, and the experience — far from being just technical — has actually turned out to be **surprisingly fun**. It’s also given me the chance to **connect with a wide range of people**, both inside and outside the university, and that has made all the difference.
 
-image: /images/post/2025/august/papers25.png
+![Research papers illustration](/images/post/2025/august/papers25.png)
 
 Over coffee, shared Google Docs, and endless rounds of reviewer comments, we've laughed, learned, and occasionally cried (academically, of course). This post is my attempt to capture some of those lessons and moments — from the frustrating to the uplifting.
+
 
 ## 🎯 Tip #1: Writing a Paper is Not the Hard Part — Rewriting It Is
 

@@ -2,7 +2,7 @@
 title: "Navigating APCs, Institutional Agreements, and Prestige Publishing: A Doctoral Student’s Guide"
 date: 2025-08-20
 categories: [Academia, PhD, Publishing, Open Access]
-permalink: /posts/2025/08/navigating-apcs-guide/
+permalink: /posts/2025/08/apcs-guide/
 tags:
   - APCs
   - Open Access
@@ -35,9 +35,9 @@ However, these most prestigious venues often come with steeper APCs, making **in
 
 ##  Institutional Agreements and Transformative Deals at UAH
 
-The University of Alcalá (UAH) has signed **transformative agreements** with publishers, covering APCs for its researchers — a significant financial relief and support for open access publication  [oai_citation:2‡uah-es.libguides.com](https://uah-es.libguides.com/acceso_abierto/pagoapcs?utm_source=chatgpt.com).
+The University of Alcalá (UAH) has signed **transformative agreements** with publishers, covering APCs for its researchers — a significant financial relief and support for open access publication  [oai_citation:2‡uah-es.libguides.com](https://uah-es.libguides.com/acceso_abierto/pagoapcs).
 
-UAH also adheres to **national and European open access mandates** (e.g., LCTI 14/2011, the Berlin Declaration), emphasising repository deposit within 6–12 months post-publication  [oai_citation:3‡biblioteca.uah.es](https://biblioteca.uah.es/export/sites/biblioteca/.galleries/Galeria-Documentos-Biblioteca/Politica_institucional_acceso_abierto_UAH.pdf?utm_source=chatgpt.com).
+UAH also adheres to **national and European open access mandates** (e.g., LCTI 14/2011, the Berlin Declaration), emphasising repository deposit within 6–12 months post-publication  [oai_citation:3‡biblioteca.uah.es](https://biblioteca.uah.es/export/sites/biblioteca/.galleries/Galeria-Documentos-Biblioteca/Politica_institucional_acceso_abierto_UAH.pdf.
 
 ### Key Benefits for UAH Researchers:
 - **No out‑of‑pocket cost** for APCs under specific agreements.
