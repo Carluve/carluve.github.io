@@ -13,11 +13,7 @@ tags:
   - iOS
 ---
 
-# My Experience Installing Cloudflare 1.1.1.1 and WARP on iPad
-
-I've always cared about having a fast and private internet connection, especially when using public Wi-Fi or mobile networks. That's why I decided to try Cloudflare's 1.1.1.1 app with WARP.
-
-Below I'll share how the setup looks on iOS, what each option means, and why I personally keep it installed.
+I've always cared about having a fast and private internet connection, especially when using public Wi-Fi or mobile networks. That's why I decided to try Cloudflare's 1.1.1.1 app with WARP. Below I'll share how the setup looks on iOS, what each option means, and why I personally keep it installed.
 
 ![Cloudflare WARP app interface](/images/post/2025/august/cloudflare_01.jpeg)
 
