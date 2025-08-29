@@ -17,11 +17,11 @@ _Diving into the world of Article Processing Charges (APCs), why publishing in h
 
 ##  What Are APCs and Why Do They Matter?
 
-APCs (Article Processing Charges) are fees that authors — or their institutions or funders — pay to make research articles openly accessible, either in fully open access journals or hybrid ones. While they enable public access, these costs can be quite substantial, especially for high‑prestige journals, potentially ranging from under USD 100 to over USD 3,500  [oai_citation:0‡Wikipedia](https://es.wikipedia.org/wiki/Cargo_por_procesamiento_de_art%C3%ADculos?utm_source=chatgpt.com).
+APCs (Article Processing Charges) are fees that authors — or their institutions or funders — pay to make research articles openly accessible, either in fully open access journals or hybrid ones. While they enable public access, these costs can be quite substantial, especially for high‑prestige journals, potentially ranging from under USD 100 to over USD 3,500  [Cargo APC](https://es.wikipedia.org/wiki/Cargo_por_procesamiento_de_art%C3%ADculos).
 
-image: /images/post/2025/august/papersv2_2025.png
+![Research papers illustration](/images/post/2025/august/papersv2_2025.png)
 
-APCs are a common funding model in professional open access publishing, but they may pose financial pressure, especially on researchers in less well‑funded contexts  [oai_citation:1‡Wikipedia](https://es.wikipedia.org/wiki/Cargo_por_procesamiento_de_art%C3%ADculos?utm_source=chatgpt.com).
+APCs are a common funding model in professional open access publishing, but they may pose financial pressure, especially on researchers in less well‑funded contexts  [APC](https://es.wikipedia.org/wiki/Cargo_por_procesamiento_de_art%C3%ADculos).
 
 ##  Why Publishing in High‑Tier Journals Is Worth It
 
@@ -63,7 +63,7 @@ UAH also adheres to **national and European open access mandates** (e.g., LCTI 1
 | **Use institutional tools** | UAH’s library can help identify eligible journals and guide submission. |
 | **Match prestige with mission** | Choose journals that balance impact, open access, and fit with your research goals. |
 | **Document your process** | Keep records for grant compliance or future reporting. |
-| **Deposit in repositories** | Even when APCs are covered, deposits are often mandatory for open access mandates  [oai_citation:4‡uah-es.libguides.com](https://uah-es.libguides.com/acceso_abierto/pagoapcs?utm_source=chatgpt.com) [oai_citation:5‡University Library](https://biblioteca.ua.es/es/investiga-y-publica/publicar-en-acceso-abierto-acuerdos-de-la-bua.html?utm_source=chatgpt.com) [oai_citation:6‡digitalab-ssie.unam.mx](https://digitalab-ssie.unam.mx/acuerdos?utm_source=chatgpt.com) [oai_citation:7‡biblioteca.uah.es](https://biblioteca.uah.es/export/sites/biblioteca/.galleries/Galeria-Documentos-Biblioteca/Politica_institucional_acceso_abierto_UAH.pdf?utm_source=chatgpt.com). |
+| **Deposit in repositories** | Even when APCs are covered, deposits are often mandatory for open access mandates [Biblioteca UAH](https://biblioteca.uah.es/export/sites/biblioteca/.galleries/Galeria-Documentos-Biblioteca/Politica_institucional_acceso_abierto_UAH.pdf?utm_source=chatgpt.com). |
 
 ---
 
