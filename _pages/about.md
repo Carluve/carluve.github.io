@@ -7,16 +7,12 @@ redirect_from:
   - /about.html
 ---
 
-AI researcher focused on applying Generative AI to solve real-world challenges in education, business, and public services.
-
 Hi there! 👋
 
-I'm a PhD candidate and AI enthusiast with a passion for applying cutting-edge technology to real-world challenges—especially in education and the public sector. By day, I help governments and institutions innovate with AI and cloud at Amazon Web Services. By night, I explore the messy, fascinating world of generative models, digital policy, and sometimes... memes.
+I’m a PhD candidate and AI researcher passionate about using Generative AI to create solutions that matter. At Amazon Web Services, I work with governments and institutions to design innovation strategies powered by AI and cloud. Beyond that, I explore how generative models are reshaping education, policy, and the future of work.
 
-Previously, I worked across tech giants and innovation teams (Telefónica, Lenovo, Microsoft), always keeping one eye on impact and the other on what's next.
+My journey has taken me through innovation teams at Telefónica, Lenovo, and Microsoft, where I learned the value of driving change with purpose.
 
-When I’m not coding, presenting, or reading obscure regulation docs, you’ll probably find me:
+Outside of research and work, you’ll usually find me 🚴 cycling around Madrid, 🌍 discovering new cities, or 🎙️ sharing ideas on how AI and technology can transform the way we learn and live.
 
-🚴 biking through Madrid and beyond, always chasing new horizons, 🌍 chasing new cities to explore, or 🎙️ sharing thoughts on AI, tech, and the future of learning.
-
-This site is my digital notebook — ideas, projects, papers, and a bit of chaos. Welcome!
+This site is where I share projects, research, and reflections—welcome to my notebook of ideas.
