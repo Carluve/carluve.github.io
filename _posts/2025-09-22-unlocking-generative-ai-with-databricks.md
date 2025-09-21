@@ -32,22 +32,22 @@ In other words: if data is the new oil, then **Databricks is the refinery**.
 ### 1. Ingesting data
 With Databricks, you can easily bring in data from files, databases, or cloud sources.  
 
-![Databricks Data Ingestion – Uploading datasets into the platform](/images/post/2025/september/databricks01.jpeg)
+![Databricks Data Ingestion – Uploading datasets into the platform](/images/post/2025/september/databricks01.png)
 
 ### 2. Cleaning and preparing  
 Once inside, Databricks notebooks allow you to **clean and standardise** messy real-world data so that it’s ready for downstream AI.  
 
-![Databricks Notebooks – Cleaning and preparing raw data](/images/post/2025/september/databricks02.jpeg)
+![Databricks Notebooks – Cleaning and preparing raw data](/images/post/2025/september/databricks02.png)
 
 ### 3. Exploring and querying  
 Data can then be explored with **SQL, Python, or even natural language**. You get full visibility into volumes, patterns, and structures.  
 
-![Databricks SQL Editor – Exploring data at scale](/images/post/2025/september/databricks03.jpeg)
+![Databricks SQL Editor – Exploring data at scale](/images/post/2025/september/databricks03.png)
 
 ### 4. Enabling AI & Generative AI  
 With data in place, Databricks connects seamlessly with machine learning and Generative AI frameworks — making it possible to move from raw datasets to **scalable AI use cases**.  
 
-![Databricks Workflow – From cleaned data to AI readiness](/images/post/2025/september/databricks04.jpeg)
+![Databricks Workflow – From cleaned data to AI readiness](/images/post/2025/september/databricks04.png)
 
 ---
 
@@ -57,7 +57,7 @@ Most organisations spend millions managing their data — but very few manage to
 
 Without Databricks, the journey is fragmented and error-prone. With Databricks, it becomes **clean, scalable, and collaborative**.  
 
-![Databricks Dashboard – Unified view of data and AI workloads](/images/post/2025/september/databricks05.jpeg)
+![Databricks Dashboard – Unified view of data and AI workloads](/images/post/2025/september/databricks05.png)
 
 ---
 
