@@ -174,29 +174,6 @@ Durable Objects → state when you need it
 
 ---
 
-## The Limitations (And Why They Matter)
-
-Workers have boundaries by design. Good to know:
-
-⚠️ **1. CPU time limits**  
-Great for responsiveness, bad for heavy computation.
-
-⚠️ **2. No traditional Node.js APIs**  
-No `fs`, no child processes, no native modules. Most modern JS is fine, but some libraries won’t work.
-
-⚠️ **3. Long background jobs aren’t ideal**  
-If you need tasks that run for minutes, you’ll need Queues or external compute.
-
-⚠️ **4. Platform lock-in**  
-Durable Objects ≠ DynamoDB  
-KV ≠ Redis  
-Not a drop-in replacement.
-
-⚠️ **5. Debugging requires Cloudflare tooling**  
-Observability is improving, but it’s not the same as SSH logs.
-
----
-
 ## My Overall View After Deploying the Demo
 
 Workers force you to write small, fast, global-first applications.
