@@ -26,7 +26,7 @@ author:
   avatar           : "avatar-carlos.png"
   name             : "Carlos Luengo Vera"
   pronouns         : # example: "she/her"  
-  bio              : "AI researcher and strategist leveraging Generative AI to drive innovation and deliver real-world impact across education, business, and the public sector."
+  bio              : "AI researcher focused on applying Generative AI to solve real-world challenges in education, business, and public services."
   location         : "Spain"
   employer         : "Universidad de Alcalá"
   uri              : "http://www.carluve.com"
@@ -75,9 +75,6 @@ author:
   xing             : # Username
   youtube          : # Username
   zhihu            : # Username
-  
-  # Contact and Communication
-  website          : "https://mypublicinbox.com/CARLUVE" # My public inbox for contact
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
