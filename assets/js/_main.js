@@ -32,6 +32,7 @@ $(document).ready(function () {
 
   // Sticky footer
   var bumpIt = function () {
+    $("body").css("padding-bottom", "0");
     $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
   },
     didResize = false;
