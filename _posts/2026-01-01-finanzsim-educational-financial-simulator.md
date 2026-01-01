@@ -12,7 +12,7 @@ tags:
 image: /images/post/2026/january/finanzsim2026_01.png
 ---
 
-# Meet FinanzSim: My Educational Financial Management Simulator
+Meet FinanzSim: My Educational Financial Management Simulator
 
 *An AI-powered web app I built to help business students master financial concepts through hands-on simulation.*
 

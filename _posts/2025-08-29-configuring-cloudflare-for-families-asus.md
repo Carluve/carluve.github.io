@@ -37,7 +37,6 @@ By setting this up at router level, every device connected to your Wi-Fi automat
 Here’s the configuration I applied (screenshot below):  
 
 ![Cloudflare for Families ASUS Router config](/images/post/2025/august/cloudflare_asus.png)  
-*(Image placeholder: screenshot of ASUS WAN DNS settings with Cloudflare Family DNS enabled)*  
 
 1. **WAN DNS Setting**  
    - Set **DNS Server** manually to `1.1.1.3` and `1.0.0.3`.  

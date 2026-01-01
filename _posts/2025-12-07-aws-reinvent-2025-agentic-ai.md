@@ -5,8 +5,6 @@ tags: [AWS, AI, Cloud Computing, Enterprise, re:Invent]
 categories: [Technology, AI]
 ---
 
-**Summary**
-
 AWS re:Invent 2025 confirms the company doubles down on agentic AI: new foundation models, custom-training via its own service, and next-gen chips & infra. This rounds up into a strong proposition for enterprises looking to integrate AI at scale, especially in data-heavy or regulated industries.
 
 ---
