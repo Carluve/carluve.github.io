@@ -250,13 +250,13 @@ document.addEventListener('DOMContentLoaded', function() {
         
         /* Japanese-style selection */
         ::selection {
-            background: var(--accent-coral);
-            color: white;
+            background: #3366cc !important;
+            color: #fff !important;
         }
         
         ::-moz-selection {
-            background: var(--accent-coral);
-            color: white;
+            background: #3366cc !important;
+            color: #fff !important;
         }
         
         @media (prefers-reduced-motion: reduce) {
